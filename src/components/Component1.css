@@ -1,0 +1,27 @@
+.component1-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+.component1-wrapper h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-family: var(--primary-font);
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.list-container ul {
+    padding-inline-start: 0;
+}
+.list-container ul li {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    font-size: 1.25rem;
+    font-family: var(--secondary-font);
+    color: var(--tertiary);
+    letter-spacing: .15rem;
+}
