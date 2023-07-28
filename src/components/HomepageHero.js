@@ -7,7 +7,7 @@ const HomepageHero = () => {
     <section className="homepage-hero">
       {/* Author image */}
       <img
-        src={`${process.env.PUBLIC_URL}/me.png`}
+        src={`${process.env.PUBLIC_URL}/me.jpg`}
         className="author-image"
         alt="Author"
       />

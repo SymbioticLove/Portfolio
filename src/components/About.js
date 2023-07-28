@@ -13,7 +13,7 @@ const About = () => {
         {/* Profile picture */}
         <img
           className="about-image"
-          src={`${process.env.PUBLIC_URL}/me-gray.png`}
+          src={`${process.env.PUBLIC_URL}/me-gray.jpg`}
           alt="Matthew Ford"
         />
         <div className="about-details">
