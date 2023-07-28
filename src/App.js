@@ -25,16 +25,12 @@ function App() {
         {/* Configuring routes for different components */}
         <Routes>
           {/* Route for the homepage, displaying the 'Homepage' component */}
-          <Route path="/" element={<Homepage />} />
+          <Route path="/Portfolio" element={<Homepage />} />
 
-          {/* Route for the 'About' page, displaying the 'About' component */}
-          <Route path="/about" element={<About />} />
-
-          {/* Route for the 'Projects' page, displaying the 'Repositories' component */}
-          <Route path="/projects" element={<Repositories />} />
-
-          {/* Route for the 'Contact' page, displaying the 'Contact' component */}
-          <Route path="/contact" element={<Contact />} />
+          {/* Nested routes under the '/Portfolio' route */}
+          <Route path="/Portfolio/about" element={<About />} />
+          <Route path="/Portfolio/projects" element={<Repositories />} />
+          <Route path="/Portfolio/contact" element={<Contact />} />
 
           {/* Route for any other path that doesn't match the above routes */}
           <Route path="*" element={<Homepage />} />

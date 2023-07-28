@@ -35,24 +35,30 @@ const Footer = () => {
 
         {/* Projects link */}
         <Link
-          className={`nav-link ${activePath === '/projects' ? 'active' : ''}`}
-          to="/projects"
+          className={`nav-link ${
+            activePath === '/Portfolio/projects' ? 'active' : ''
+          }`}
+          to="/Portfolio/projects"
         >
           Projects
         </Link>
 
         {/* About link */}
         <Link
-          className={`nav-link ${activePath === '/about' ? 'active' : ''}`}
-          to="/about"
+          className={`nav-link ${
+            activePath === '/Portfolio/about' ? 'active' : ''
+          }`}
+          to="/Portfolio/about"
         >
           About
         </Link>
 
         {/* Contact link */}
         <Link
-          className={`nav-link ${activePath === '/contact' ? 'active' : ''}`}
-          to="/contact"
+          className={`nav-link ${
+            activePath === '/Portfolio/contact' ? 'active' : ''
+          }`}
+          to="/Portfolio/contact"
         >
           Contact
         </Link>
