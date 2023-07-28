@@ -52,6 +52,7 @@
   text-align: center;
   background: none;
   border: none;
+  margin-top: .5rem;
 }
 .back-to-top:hover {
   cursor: pointer;

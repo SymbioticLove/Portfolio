@@ -24,9 +24,6 @@ const Contact = () => {
         help. Let&apos;s create something amazing together!
       </p>
 
-      {/* Signature */}
-      <div className="signature2">Matthew Ford</div>
-
       {/* Contact buttons */}
       <div className="contact-buttons">
         {/* Email button */}
@@ -42,10 +39,13 @@ const Contact = () => {
 
       {/* Closing paragraph */}
       <p>
-        Thank you for visiting my website and taking the time to explore my
+        Thank you for visiting my portfolio and taking the time to explore my
         work. I appreciate your interest and look forward to connecting with you
         soon!
       </p>
+
+      {/* Signature */}
+      <div className="signature2">-Matthew Ford</div>
     </div>
   );
 };
