@@ -10,7 +10,7 @@ const ProjectPreview = () => {
       try {
         const response = await fetch('https://api.github.com/users/SymbioticLove/repos', {
           headers: {
-            'Authorization': `token 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`
+            'Authorization': ``
           }
         });
         let data = await response.json();
