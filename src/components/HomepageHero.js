@@ -5,7 +5,7 @@ const HomepageHero = () => {
   return (
     <section className="homepage-hero">
       <img
-        src="https://placehold.co/400"
+        src={process.env.PUBLIC_URL + '/us2.jpg'}
         className="author-image"
         alt="Author"
       />

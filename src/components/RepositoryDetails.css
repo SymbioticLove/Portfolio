@@ -31,6 +31,35 @@ a:hover {
 
 .link-container {
   display: grid;
+  font-family: var(--mont);
+}
+
+.link-container a:hover {
+  margin-left: .5rem;
+}
+
+.languages {
+  font-family: var(--robo)
+}
+
+.details-descrip {
+  font-family: var(--sans);
+  font-size: 1.25rem;
+}
+
+.details-repo-title {
+  font-family: var(--mont);
+  color: var(--accent);
+  font-size: 2rem;
+}
+.main-gh-link {
+  color: var(--dgreen);
+  font-family: var(--mont);
+  font-size: 1.25rem;
+}
+
+.main-gh:hover {
+  margin-left: .35rem;
 }
 
 @keyframes slideIn7 {
@@ -47,7 +76,7 @@ a:hover {
 @keyframes slideIn5 {
   0% {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-15%);
   }
   100% {
     opacity: 1;

@@ -42,6 +42,7 @@
 .author-image {
   border-radius: 50%;
   animation: flipIn 3s forwards;
+  height: 400px;
 }
 
 @keyframes fadeIn {

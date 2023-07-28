@@ -32,7 +32,7 @@ const About = () => {
             my own business with my wife, Jessela. But along the way, I
             discovered a deep passion for the field, especially for full-stack
             engineering and architecture. Through dedicated effort, I&apos;ve
-            amassed about 2000 practical hours and have become comfortable with
+            amassed almost 2000 practical hours and have become comfortable with
             any syntax, largely due to the advent of ChatGPT, which has become
             an integral tool in my work.
           </p>
@@ -49,8 +49,8 @@ const About = () => {
             On the business side, Jessela and I bootstrapped costs over $20,000
             to launch our eCommerce platform, with a focus on community impact
             and environmental consciousness. As we transition into the
-            maintenance phase of our business, I&apos;m excited to use my skills
-            in the tech industry.
+            maintenance phase of our start-up, I&apos;m excited to deploy my
+            newfound skills in the tech industry.
           </p>
           <p className="story-links">
             <a

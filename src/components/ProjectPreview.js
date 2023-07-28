@@ -51,7 +51,7 @@ const ProjectPreview = () => {
         to learn more!
       </p>
       <Link to="/projects">
-        <button className="explore-button">Explore Projects</button>
+        <button className="explore-button">Explore All Projects</button>
       </Link>
       <div className="project-list">
         {repos.map(repo => (

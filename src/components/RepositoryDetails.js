@@ -41,15 +41,29 @@ const RepositoryDetails = ({ repo }) => {
 
   if (!repo) {
     return (
-      <div className="select-a-repo">Select a repository to view details</div>
+      <div>
+        <div className="select-a-repo">Select a repository to view details</div>
+        <p className="main-gh-link">
+          {'Or vist the '}
+          <a
+            href="https://github.com/SymbioticLove"
+            alt="Main portfolio link"
+            className="main-gh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            main repository page →
+          </a>
+        </p>
+      </div>
     );
   }
 
   return (
     <div className="repository-details">
-      <h2>{repo.name}</h2>
-      <p>{repo.description}</p>
-      <div>
+      <h2 className="details-repo-title">{repo.name}</h2>
+      <p className="details-descrip">{repo.description}</p>
+      <div className="languages">
         Languages Distribution:
         {Object.entries(languages).map(([language, percent]) => {
           const color = languageColors[language] || '#000'; // default to black if language color isn't defined
@@ -62,14 +76,14 @@ const RepositoryDetails = ({ repo }) => {
       </div>
       <div className="link-container">
         <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-          View on GitHub
+          View on GitHub →
         </a>
         <a href={repo.clone_url} target="_blank" rel="noopener noreferrer">
-          Clone Repository
+          Clone Repository →
         </a>
         {repo.homepage && (
           <a href={repo.homepage} target="_blank" rel="noopener noreferrer">
-            View at {repo.homepage}
+            View at {repo.homepage} →
           </a>
         )}
       </div>
