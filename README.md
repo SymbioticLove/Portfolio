@@ -11,6 +11,8 @@ Portfolio/
 |-- node_modules/
 |-- ...
 |
+|-- static/
+|   |-- (bundles)...
 |-- public/
 |   |-- index.html
 |   |-- favicon.ico
