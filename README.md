@@ -109,4 +109,4 @@ Copyright 2023 Matthew Ford
 
 All rights reserved. No part of this project, including but not limited to the code and associated files, may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author, except for brief quotations or other non-commercial uses permitted by copyright law.
 
-Unauthorized use, reproduction, distribution, or transmission of this project may result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under the law.
+Unauthorized use, reproduction, distribution, or transmission of this project or the projects contained herein may result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under the law.
