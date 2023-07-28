@@ -1,6 +1,6 @@
 // Importing required dependencies from React and React Router
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Importing custom components for Header, Footer, Homepage, Repositories, About, and Contact
 import Header from './components/Header';
