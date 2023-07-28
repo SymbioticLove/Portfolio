@@ -96,7 +96,6 @@ The application will be accessible at `http://localhost:3000`.
 The project uses the following external libraries:
 
 - `react-router-dom`: For client-side routing.
-- `react-responsive-carousel`: For creating a responsive carousel on the home page.
 - `web-vitals`: For collecting and reporting web-vital metrics.
 
 ## Contributing
