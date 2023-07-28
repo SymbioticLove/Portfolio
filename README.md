@@ -1,6 +1,6 @@
 # React Portfolio Page
 
-This is a full-stack web application built using the React front-end framework. The project includes various components that provide functionalities such as displaying essays, project previews, contact information, and more. The application also interacts with the GitHub API to fetch and display repositories.
+This is a portfolio web application built using the React front-end framework. The project includes various components that provide functionalities such as displaying essays, project previews, contact information, and more. The application also interacts with the GitHub API to fetch and display repositories.
 
 ## Project Structure
 
