@@ -63,6 +63,7 @@ Portfolio/
 |   |   |-- Essay3.css
 |   |   |-- README.md
 |
+|-- index.html (entry point)
 |-- .env
 |-- .eslintrc.json
 |-- .gitignore
