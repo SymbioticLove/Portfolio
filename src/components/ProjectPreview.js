@@ -8,14 +8,11 @@ const ProjectPreview = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch(
-          "https://api.github.com/users/SymbioticLove/repos",
-          {
-            headers: {
-              Authorization: `token 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`,
-            },
-          },
-        );
+        const response = await fetch('https://api.github.com/users/SymbioticLove/repos', {
+          headers: {
+            'Authorization': ``
+          }
+        });
         let data = await response.json();
 
         if (Array.isArray(data)) {
