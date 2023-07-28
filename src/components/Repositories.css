@@ -1,0 +1,22 @@
+.repositories-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--lgreen);
+}
+
+.repository-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .repositories-container {
+    flex-direction: column;
+  }
+  .repository-details-container {
+    width: 100%;
+  }
+}

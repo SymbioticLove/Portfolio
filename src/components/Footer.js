@@ -15,7 +15,7 @@ const Footer = () => {
 
     return (
         <footer className="footer">
-            <h2 className="thanks">Thanks for reading! I look forward to hearing from you.</h2>
+            <h2 className="thanks">You're awesome.</h2>
             <h3 className="regards">Warm Regards,</h3>
             <p className="signature">Matthew Ford</p>
             <nav className="footer-nav">

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     const location = useLocation();
     const activePath = location.pathname;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [activePath]);
 
     return (
         <header className="header">

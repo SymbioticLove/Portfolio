@@ -1,0 +1,94 @@
+@keyframes fadeIn10 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.contact {
+  background-color: var(--lgreen);
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn10 1s ease-in-out;
+}
+
+.contact h1 {
+  font-family: var(--mont);
+  color: var(--accent);
+}
+
+.contact p {
+  font-family: var(--sans);
+  color: var(--dgreen);
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.signature2 {
+  font-family: var(--sig);
+  font-size: 24px;
+  color: var(--dgreen);
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.email-button,
+.call-button {
+    background-color: var(--lgreen);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--dgreen);
+    margin: 10px;
+    font-size: 1.2rem;
+    color: var(--dgreen);
+    margin-top: .2rem;
+    width: 100px;
+}
+
+.email-button:hover,
+.call-button:hover {
+  background-color: var(--dgreen);
+  color: var(--lgreen);
+}
+
+/* Media queries for tablet and mobile */
+@media (max-width: 768px) {
+  .contact {
+    padding: 10px;
+  }
+
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .signature2 {
+    font-size: 20px;
+  }
+
+  .email-button,
+  .call-button {
+    padding: 10px 16px;
+    font-size: 14px;
+    margin: 8px;
+  }
+
+  .contact-buttons {
+    flex-direction: column-reverse;
+  }
+}

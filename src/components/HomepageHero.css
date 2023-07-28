@@ -28,24 +28,6 @@
     color: var(--dgreen);
     line-height: 2;
     font-family: var(--sans);
-    margin-bottom: 40px;
-    animation: fadeIn 3s forwards;
-}
-
-.hero-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-}
-
-.hero-skills li {
-    color: var(--dgreen);
-    font-family: var(--sans);
-    padding: 5px;
-    opacity: 0;
     animation: fadeIn 3s forwards;
 }
 
@@ -53,15 +35,8 @@
     color: var(--accent);
     font-family: var(--sans);
     animation: fadeIn 3s forwards;
-    font-size: 1.8rem;
-}
-
-.hero-certifications-title2 {
-    font-size: 1.5rem;
-}
-
-.hero-certifications-description {
-    color: var(--dgreen);
+    font-size: 2rem;
+    margin-top: 5rem;
 }
 
 .author-image {
@@ -120,6 +95,9 @@
     .homepage-hero {
         padding: 20px;
         background: linear-gradient(to bottom, var(--dgreen) 3%, var(--lgreen) 20%)
+    }
+    .hero-certifications-title {
+        margin-top: 3rem;
     }
 
     .hero-title {

@@ -16,7 +16,6 @@
 .contact-preview p {
     font-size: 1.2rem;
     font-family: var(--sans);
-    margin-bottom: 60px;
     padding: 10px;
 }
 
@@ -58,7 +57,6 @@
 @media (max-width: 767px) {
   .contact-preview {
     height: auto;
-    background: linear-gradient(to top, var(--dgreen) 3%, var(--lgreen) 30%);
   }
 
   .contact-preview h2 {

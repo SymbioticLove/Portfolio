@@ -9,16 +9,17 @@
 
 .essay-title {
     color: var(--accent);
-    font-size: 2.5em;
-    margin-bottom: 1em;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     font-family: var(--sans);
 }
 
 .essay-text {
     margin-bottom: 1.5em;
-    text-indent: 2em;
-    font-family: var(--mont)
+    text-indent: 2rem;
+    font-family: var(--mont);
+    font-size: 1rem;
 }
 
 .essay-sig {

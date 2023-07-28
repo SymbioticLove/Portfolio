@@ -4,9 +4,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
 import Homepage from './components/Homepage';
-// import RepositoryDetails from './components/RepositoryDetails';
-// import About from './components/About';
-// import Contact from './components/Contact';
+import Repositories from './components/Repositories';
+import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          {/* <Route path="/projects/:id" element={<RepositoryDetails />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/projects" element={<Repositories />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

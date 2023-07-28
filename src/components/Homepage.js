@@ -1,8 +1,7 @@
 import React from 'react';
-import './Homepage.css';
 import HomepageHero from './HomepageHero';
-// import AboutPreview from './AboutPreview';
-// import ProjectPreview from ./ProjectPreview';
+import AboutPreview from './AboutPreview';
+import ProjectPreview from './ProjectPreview';
 import Essay from './Essay';
 import ContactPreview from './ContactPreview';
 
@@ -13,10 +12,10 @@ const Homepage = () => {
                 <HomepageHero />
             </section>
             <section className="about-preview">
-                {/* <AboutPreview /> */}
+                <AboutPreview />
             </section>
             <section className="project-preview">
-                {/* <ProjectPreview /> */}
+                <ProjectPreview />
             </section>
             <section className="Essay">
                 <Essay />

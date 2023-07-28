@@ -1,0 +1,62 @@
+.about-preview-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-preview {
+    background-color: var(--lgreen);
+    padding: 20px;
+    text-align: center;
+}
+
+.preview-title {
+    font-size: 2rem;
+    color: var(--accent);
+    font-family: var(--mont);
+    margin-bottom: 20px;
+}
+
+.preview-text {
+    font-size: 1rem;
+    color: var(--dgreen);
+    font-family: var(--sans);
+    margin-bottom: 20px;
+}
+
+.preview-button {
+    background-color: var(--lgreen);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--dgreen);
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    color: var(--dgreen);
+    margin-top: .2rem;
+}
+
+.preview-button:hover {
+    color: var(--lgreen);
+    background-color: var(--dgreen);
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) { 
+    /* Styles for tablet devices */
+    .preview-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) { 
+    /* Styles for mobile devices */
+    .preview-text {
+        font-size: 1rem;
+    }
+    .preview-button {
+        font-size: 0.9rem;
+    }
+}

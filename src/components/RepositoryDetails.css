@@ -1,0 +1,64 @@
+.repository-details {
+  padding: 20px;
+  box-sizing: border-box;
+  animation: slideIn5 1s;
+  width: 90%;
+  height: 70%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  color: var(--dgreen);
+}
+
+.select-a-repo {
+    color: var(--accent);
+    font-family: var(--robo);
+    font-size: 2rem;
+    text-align: center;
+}
+
+a {
+  color: var(--dgreen);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.link-container {
+    display: grid;
+}
+
+@keyframes slideIn7 {
+  0% {
+    opacity: 0;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn5 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .repository-details {
+    animation: slideIn7 1s;
+    width: 100%;
+    height: auto;
+  }
+}

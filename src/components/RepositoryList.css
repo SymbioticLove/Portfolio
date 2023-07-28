@@ -1,0 +1,57 @@
+.repository-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.repository-list::-webkit-scrollbar-track {
+  background: var(--lgreen); 
+}
+ 
+.repository-list::-webkit-scrollbar-thumb {
+  background: var(--dgreen); 
+}
+
+.repository-list::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+.repository-list {
+  width: 30%;
+  height: 100vh;
+  overflow-y: scroll;
+  border-right: 1px solid var(--dgreen);
+  padding: 20px;
+  box-sizing: border-box;
+  animation: fadeIn6 1s;
+  direction: rtl;
+}
+
+.repository-list-item {
+  direction: ltr;  /* Added this line */
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid var(--dgreen);
+  border-radius: 5px;
+  animation: fadeIn 1s;
+  color: var(--dgreen);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.repository-list-item:hover {
+  color: var(--lgreen);
+  background: var(--dgreen);
+}
+
+@keyframes fadeIn6 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@media (max-width: 768px) {
+  .repository-list {
+    width: 100%;
+    height: 50vh;
+    border-bottom: 1px solid var(--dgreen);
+  }
+}
