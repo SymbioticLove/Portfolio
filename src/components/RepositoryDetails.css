@@ -56,6 +56,7 @@ a:hover {
   color: var(--dgreen);
   font-family: var(--mont);
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .main-gh:hover {
