@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
@@ -6,11 +6,6 @@ const Header = () => {
   // Get the current location from the React Router
   const location = useLocation();
   const activePath = location.pathname;
-
-  // Scroll to the top of the page when the active path changes
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [activePath]);
 
   // Header component rendering
   return (
@@ -25,8 +20,8 @@ const Header = () => {
       <nav className="header-nav">
         {/* Home link */}
         <Link
-          className={`nav-link ${activePath === '/' ? 'active' : ''}`}
-          to="/"
+          className={`nav-link ${activePath === '/Portfolio' ? 'active' : ''}`}
+          to="/Portfolio"
         >
           Home
         </Link>

@@ -27,8 +27,8 @@ const Footer = () => {
       <nav className="footer-nav">
         {/* Home link */}
         <Link
-          className={`nav-link ${activePath === '/' ? 'active' : ''}`}
-          to="/"
+          className={`nav-link ${activePath === '/Portfolio' ? 'active' : ''}`}
+          to="/Portfolio"
         >
           Home
         </Link>
