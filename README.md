@@ -14,9 +14,7 @@ Portfolio/
 |-- static/
 |   |-- ...
 |-- public/
-|   |-- index.html
-|   |-- favicon.ico
-|   |-- us2.jpg
+|   |-- ...
 |
 |-- src/
 |   |-- App.js
