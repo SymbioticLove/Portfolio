@@ -45,22 +45,22 @@
 
 @keyframes slideIn3 {
   0% {
-      transform: translateY(-25%);
-      opacity: 0;
+    transform: translateY(-25%);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @media (max-width: 1024px) {
   .essay-nav button {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .essay-section {
-      padding: 20px 10px;
+    padding: 20px 10px;
   }
 }
 
@@ -68,19 +68,19 @@
   .section-title {
     text-align: center;
   }
-  
+
   .essay-nav {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .essay-nav button {
-      font-size: 0.9rem;
-      margin-left: 0;
+    font-size: 0.9rem;
+    margin-left: 0;
   }
 
   .essay-section {
-      padding: 10px 5px;
+    padding: 10px 5px;
   }
 }

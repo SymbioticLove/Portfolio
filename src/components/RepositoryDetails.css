@@ -13,10 +13,10 @@
 }
 
 .select-a-repo {
-    color: var(--accent);
-    font-family: var(--robo);
-    font-size: 2rem;
-    text-align: center;
+  color: var(--accent);
+  font-family: var(--robo);
+  font-size: 2rem;
+  text-align: center;
 }
 
 a {
@@ -30,7 +30,7 @@ a:hover {
 }
 
 .link-container {
-    display: grid;
+  display: grid;
 }
 
 @keyframes slideIn7 {

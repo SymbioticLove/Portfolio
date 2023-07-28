@@ -3,11 +3,11 @@
 }
 
 .repository-list::-webkit-scrollbar-track {
-  background: var(--lgreen); 
+  background: var(--lgreen);
 }
- 
+
 .repository-list::-webkit-scrollbar-thumb {
-  background: var(--dgreen); 
+  background: var(--dgreen);
 }
 
 .repository-list::-webkit-scrollbar-thumb:hover {
@@ -26,7 +26,7 @@
 }
 
 .repository-list-item {
-  direction: ltr;  /* Added this line */
+  direction: ltr; /* Added this line */
   padding: 10px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -44,8 +44,12 @@
 }
 
 @keyframes fadeIn6 {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {

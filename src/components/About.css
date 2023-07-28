@@ -1,94 +1,98 @@
 @keyframes fadeIn4 {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .about-section {
-    padding: 20px;
-    animation-name: fadeIn4;
-    animation-duration: 1s;
-    background: var(--lgreen);
+  padding: 20px;
+  animation-name: fadeIn4;
+  animation-duration: 1s;
+  background: var(--lgreen);
 }
 
 .about-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-family: var(--mont);
-    color: var(--dgreen);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: var(--mont);
+  color: var(--dgreen);
 }
 
 .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about-image {
-    width: 400px;
-    height: auto;
-    margin: 20px;
-    transition: transform 0.2s;
-    border-radius: 10px;
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  transition: transform 0.2s;
+  border-radius: 10px;
 }
 
 .about-image:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .details-title,
 .story-title,
 .skills-title {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    color: var(--accent);
-    font-family: var(--mont);
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: var(--accent);
+  font-family: var(--mont);
 }
 
 .details-info,
 .story-text {
-    margin: 10px 0;
-    font-family: var(--sans);
-    color: var(--dgreen);
+  margin: 10px 0;
+  font-family: var(--sans);
+  color: var(--dgreen);
 }
 
 .story-links {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .story-links a {
-    color: var(--accent);
-    text-decoration: none;
-    transition: color 0.2s;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .story-links a:hover {
-    color: var(--dgreen);
+  color: var(--dgreen);
 }
 
 .about-skills {
-    width: 100%;
+  width: 100%;
 }
 
 .skills-list {
-    list-style: square inside none;
-    font-family: var(--robo);
-    color: var(--dgreen);
+  list-style: square inside none;
+  font-family: var(--robo);
+  color: var(--dgreen);
 }
 
 @media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .about-image {
-        width: 100%;
-        margin: 0;
-    }
+  .about-image {
+    width: 100%;
+    margin: 0;
+  }
 
-    .details-title,
-    .story-title,
-    .skills-title {
-        text-align: center;
-    }
+  .details-title,
+  .story-title,
+  .skills-title {
+    text-align: center;
+  }
 }

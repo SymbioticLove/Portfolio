@@ -1,70 +1,70 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: var(--dgreen);
-    color: var(--lgreen);
-    font-family: var(--sans);
-    transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--dgreen);
+  color: var(--lgreen);
+  font-family: var(--sans);
+  transition: all 0.3s ease;
 }
 
 .thanks {
-    font-family: var(--mont);
-    text-align: center;
-    margin-bottom: 0;
+  font-family: var(--mont);
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .regards {
-    font-family: var(--sans);
-    text-align: left;
-    margin-bottom: 0;
+  font-family: var(--sans);
+  text-align: left;
+  margin-bottom: 0;
 }
 .signature {
-    font-family: var(--sig);
-    font-size: 1.2rem;
-    text-align: right;
-    margin-bottom: 3rem;
-    margin-top: .5rem;
-    letter-spacing: .1rem;
+  font-family: var(--sig);
+  font-size: 1.2rem;
+  text-align: right;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1rem;
 }
 
 .footer-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    animation: fadeIn 2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 2s ease;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: var(--lgreen);
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-    text-align: center;
+  text-decoration: none;
+  color: var(--lgreen);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  text-align: center;
 }
 .back-to-top {
-    text-decoration: none;
-    color: var(--lgreen);
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-    text-align: center;
-    background: none;
-    border: none;
+  text-decoration: none;
+  color: var(--lgreen);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  text-align: center;
+  background: none;
+  border: none;
 }
 .back-to-top:hover {
-    cursor: pointer;
-    color: var(--accent);
+  cursor: pointer;
+  color: var(--accent);
 }
 
 .nav-link:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .nav-link.active {
-    color: var(--accent);
-    font-weight: bold;
+  color: var(--accent);
+  font-weight: bold;
 }
 
 @media (max-width: 1024px) {
@@ -91,7 +91,7 @@
   }
 
   .nav-link {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .back-to-top {

@@ -1,22 +1,22 @@
 .contact-preview {
-    text-align: center;
-    background: var(--lgreen);
-    color: var(--dgreen);
-    height: 300px;
-    padding: 0;
+  text-align: center;
+  background: var(--lgreen);
+  color: var(--dgreen);
+  height: 300px;
+  padding: 0;
 }
 
 .contact-preview h2 {
-    font-size: 1.8rem;
-    font-family: var(--mont);
-    margin-top: 0;
-    color: var(--accent);
+  font-size: 1.8rem;
+  font-family: var(--mont);
+  margin-top: 0;
+  color: var(--accent);
 }
 
 .contact-preview p {
-    font-size: 1.2rem;
-    font-family: var(--sans);
-    padding: 10px;
+  font-size: 1.2rem;
+  font-family: var(--sans);
+  padding: 10px;
 }
 
 .contact-btn {
@@ -40,7 +40,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .contact-preview h2 {
     font-size: 1.5rem;
   }

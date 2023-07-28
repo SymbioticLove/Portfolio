@@ -1,63 +1,63 @@
 .essay-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1em;
-    line-height: 1.6;
-    font-size: 18px;
-    color: var(--dgreen);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(--dgreen);
 }
 
 .essay-title {
-    color: var(--accent);
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-family: var(--sans);
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: var(--sans);
 }
 
 .essay-text {
-    margin-bottom: 1.5em;
-    text-indent: 2rem;
-    font-family: var(--mont);
-    font-size: 1rem;
+  margin-bottom: 1.5em;
+  text-indent: 2rem;
+  font-family: var(--mont);
+  font-size: 1rem;
 }
 
 .essay-sig {
-    font-family: var(--sig);
-    margin-bottom: 0;
-    font-size: 1.5rem;
+  font-family: var(--sig);
+  margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
 .revision {
-    margin-top: 0;
-    font-family: var(--robo);
-    font-size: .8rem;
+  margin-top: 0;
+  font-family: var(--robo);
+  font-size: 0.8rem;
 }
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 1024px) {
-    .essay-content {
-        font-size: 16px;
-    }
-    .essay-title {
-        font-size: 2em;
-    }
+  .essay-content {
+    font-size: 16px;
+  }
+  .essay-title {
+    font-size: 2em;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .essay-content {
-        font-size: 14px;
-    }
-    .essay-title {
-        font-size: 1.75em;
-    }
+  .essay-content {
+    font-size: 14px;
+  }
+  .essay-title {
+    font-size: 1.75em;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .essay-content {
-        font-size: 12px;
-    }
-    .essay-title {
-        font-size: 1.5em;
-    }
+  .essay-content {
+    font-size: 12px;
+  }
+  .essay-title {
+    font-size: 1.5em;
+  }
 }
