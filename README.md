@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# React Portfolio Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack web application built using the React front-end framework and Flask back-end framework. The project includes various components that provide functionalities such as displaying essays, project previews, contact information, and more. The application also interacts with the GitHub API to fetch and display repositories.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+The project has the following directory structure:
+Portfolio/
+|-- node_modules/
+|-- ...
+|
+|-- public/
+|   |-- index.html
+|   |-- favicon.ico
+|   |-- us2.jpg
+|
+|-- src/
+|   |-- App.js
+|   |-- App.css
+|   |-- index.js
+|   |-- index.css
+|   |-- setupTests.js
+|   |-- README.md
+|   |
+|   |-- components/
+|   |   |-- Header.js
+|   |   |-- Header.css
+|   |   |-- Footer.js
+|   |   |-- Footer.css
+|   |   |-- Homepage.js
+|   |   |-- Homepage.css
+|   |   |-- Repositories.js
+|   |   |-- Repositories.css
+|   |   |-- About.js
+|   |   |-- About.css
+|   |   |-- Contact.js
+|   |   |-- Contact.css
+|   |   |-- RepositoryList.js
+|   |   |-- RepositoryList.css
+|   |   |-- RepositoryDetails.js
+|   |   |-- RepositoryDetails.css
+|   |   |-- Warning.js
+|   |   |-- Warning.css
+|   |   |-- Essay.js
+|   |   |-- Essay.css
+|   |   |-- HomepageHero.js
+|   |   |-- HomepageHero.css
+|   |   |-- AboutPreview.js
+|   |   |-- AboutPreview.css
+|   |   |-- ProjectPreview.js
+|   |   |-- ProjectPreview.css
+|   |   |-- ContactPreview.js
+|   |   |-- ContactPreview.css
+|   |   |-- Essay1.js
+|   |   |-- Essay1.css
+|   |   |-- Essay2.js
+|   |   |-- Essay2.css
+|   |   |-- Essay3.js
+|   |   |-- Essay3.css
+|   |   |-- README.md
+|
+|-- .env
+|-- .eslintrc.json
+|-- .gitignore
+|-- .prettierrc
+|-- package-lock.json
+|-- package.json
+|-- README.md
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation and Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository: `git clone https://github.com/username/react-flask-framework.git`
+2. Navigate to the project directory: `cd react-flask-framework`
+3. Install dependencies: `npm install`
+4. Run the development server: `npm start`
 
-### `npm test`
+The application will be accessible at `http://localhost:3000`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- The application consists of different pages:
+  - **Home page:** Displays a hero section, about preview, project preview, essay, and contact preview.
+  - **About page:** Contains information about the author's background and skills.
+  - **Projects page:** Fetches repositories from GitHub API and displays project previews.
+  - **Contact page:** Provides contact information.
+  - **Essay page:** Displays essays with a warning prompt before showing potentially controversial content.
+- The app uses React Router to handle navigation and display the appropriate components for each page.
+- The `HomepageHero`, `AboutPreview`, `ProjectPreview`, `Essay`, `ContactPreview`, `Repositories`, and `Warning` components are used to structure the home page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## External Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project uses the following external libraries:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `react-router-dom`: For client-side routing.
+- `react-responsive-carousel`: For creating a responsive carousel on the home page.
+- `web-vitals`: For collecting and reporting web-vital metrics.
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributions to this project are welcome. If you find any bugs, have suggestions for improvements, or want to add new features, feel free to open an issue or submit a pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Copyright [year] [Matthew Ford]
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+All rights reserved. No part of this project, including but not limited to the code and associated files, may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author, except for brief quotations or other non-commercial uses permitted by copyright law.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Unauthorized use, reproduction, distribution, or transmission of this project may result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under the law.
