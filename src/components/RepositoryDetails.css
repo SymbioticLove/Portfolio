@@ -56,7 +56,6 @@ a:hover {
   color: var(--dgreen);
   font-family: var(--mont);
   font-size: 1.25rem;
-  text-align: center;
 }
 
 .main-gh:hover {
@@ -90,5 +89,13 @@ a:hover {
     animation: slideIn7 1s;
     width: 100%;
     height: auto;
+  }
+
+  .main-gh {
+    text-align: center;
+  }
+
+  .main-gh:hover {
+    margin-left: revert;
   }
 }
