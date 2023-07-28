@@ -31,13 +31,13 @@ const About = () => {
           <h2 className="story-title">My Journey</h2>
           <p className="story-text">
             {/* Personal story and experience */}
-            My engineering journey began 9 months ago out of necessity to start
-            my own business with my wife, Jessela. But along the way, I
-            discovered a deep passion for the field, especially for full-stack
-            engineering and architecture. Through dedicated effort, I&apos;ve
-            amassed almost 2000 practical hours and have become comfortable with
-            any syntax, largely due to the advent of ChatGPT, which has become
-            an integral tool in my work.
+            My engineering journey began out of necessity to start my own
+            business with my wife, Jessela. But along the way, I discovered a
+            deep passion for the field, especially for full-stack engineering
+            and architecture. Through dedicated effort, I&apos;ve amassed almost
+            2000 practical hours and have become comfortable with any syntax,
+            largely due to the advent of ChatGPT, which has become an integral
+            tool in my work.
           </p>
           <p className="story-text">
             {/* More details about projects and skills */}

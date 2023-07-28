@@ -6,7 +6,7 @@ const HomepageHero = () => {
   return (
     <section className="homepage-hero">
       {/* Author image */}
-      <img src="./us2.jpg" className="author-image" alt="Author" />
+      <img src="./me.jpg" className="author-image" alt="Author" />
 
       {/* Hero certifications title */}
       <h2 className="hero-certifications-title">
