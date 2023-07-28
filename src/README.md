@@ -16,6 +16,6 @@ The `App.js` file serves as the entry point to the application and sets up the m
 
 6. **Homepage, About, Repositories, and Contact Components**: These components represent the content for different pages in the application and are rendered based on the corresponding routes defined in the `Routes`.
 
-7. **Footer Component**: The `Footer` component is imported and rendered at the bottom of the application, providing additional information or navigation links.
+7. **Footer Component**: The `Footer` component is imported and rendered at the bottom of the application, providing additional information and navigation links.
 
 8. **Exporting App**: The `App` component is exported to be used as the root component for the React application.
