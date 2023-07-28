@@ -13,6 +13,7 @@ Portfolio/
 |
 |-- static/
 |   |-- ...
+|
 |-- public/
 |   |-- ...
 |
