@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./Warning.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Warning.css';
 
 const Warning = ({ onContinue }) => {
   return (

@@ -43,6 +43,11 @@
   background: var(--dgreen);
 }
 
+.repository-list-item.selected {
+  background-color: var(--dgreen);
+  color: var(--lgreen);
+}
+
 @keyframes fadeIn6 {
   0% {
     opacity: 0;

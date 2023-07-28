@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import "./Header.css";
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
   const location = useLocation();
@@ -18,25 +18,25 @@ const Header = () => {
       </div>
       <nav className="header-nav">
         <Link
-          className={`nav-link ${activePath === "/" ? "active" : ""}`}
+          className={`nav-link ${activePath === '/' ? 'active' : ''}`}
           to="/"
         >
           Home
         </Link>
         <Link
-          className={`nav-link ${activePath === "/projects" ? "active" : ""}`}
+          className={`nav-link ${activePath === '/projects' ? 'active' : ''}`}
           to="/projects"
         >
           Projects
         </Link>
         <Link
-          className={`nav-link ${activePath === "/about" ? "active" : ""}`}
+          className={`nav-link ${activePath === '/about' ? 'active' : ''}`}
           to="/about"
         >
           About
         </Link>
         <Link
-          className={`nav-link ${activePath === "/contact" ? "active" : ""}`}
+          className={`nav-link ${activePath === '/contact' ? 'active' : ''}`}
           to="/contact"
         >
           Contact

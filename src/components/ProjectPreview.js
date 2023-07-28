@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "./ProjectPreview.css";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './ProjectPreview.css';
 
 const ProjectPreview = () => {
   const [repos, setRepos] = useState([]);
@@ -8,24 +8,27 @@ const ProjectPreview = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/SymbioticLove/repos', {
-          headers: {
-            'Authorization': ``
-          }
-        });
+        const response = await fetch(
+          'https://api.github.com/users/SymbioticLove/repos',
+          {
+            headers: {
+              Authorization: ``,
+            },
+          },
+        );
         let data = await response.json();
 
         if (Array.isArray(data)) {
           // Filter the specific repositories
           const repoNames = [
-            "Demo-Product-Page",
-            "React-Flask-Boilerplate",
-            "Python-Web-Scraper",
-            "Restaurant-POS-System",
-            "Recipe-Bot-Training",
-            "Portfolio",
+            'Demo-Product-Page',
+            'React-Flask-Boilerplate',
+            'Python-Web-Scraper',
+            'Restaurant-POS-System',
+            'Recipe-Bot-Training',
+            'Portfolio',
           ];
-          const filteredRepos = data.filter((repo) =>
+          const filteredRepos = data.filter(repo =>
             repoNames.includes(repo.name),
           );
           setRepos(filteredRepos);
@@ -51,7 +54,7 @@ const ProjectPreview = () => {
         <button className="explore-button">Explore Projects</button>
       </Link>
       <div className="project-list">
-        {repos.map((repo) => (
+        {repos.map(repo => (
           <div key={repo.id} className="project-item">
             <h2>{repo.name}</h2>
             <p>{repo.description}</p>

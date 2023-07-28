@@ -1,5 +1,5 @@
-import React from "react";
-import "./About.css";
+import React from 'react';
+import './About.css';
 
 const About = () => {
   return (
@@ -59,14 +59,14 @@ const About = () => {
               rel="noopener noreferrer"
             >
               Business Website
-            </a>{" "}
+            </a>{' '}
             |
             <a
               href="https://shop.symbiotic.love"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
+              {' '}
               Shop
             </a>
           </p>

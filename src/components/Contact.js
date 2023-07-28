@@ -1,15 +1,16 @@
-import React from "react";
-import "./Contact.css";
+import React from 'react';
+import './Contact.css';
 
 const Contact = () => {
   return (
     <div className="contact">
       <h1>Contact Me</h1>
       <p>
-        Hi there! My name is Matthew Ford, and I&apos;m a passionate web
-        developer. If you have any questions or concerns, feel free to reach
-        out. I&apos;m always excited to discuss new opportunities and
-        collaborate on interesting projects.
+        I am a passionate web developer, with a keen eye and more determination
+        than most. Whatever you need, we can always make it happen together. If
+        you have any questions or concerns, feel free to reach out. I&apos;m
+        always excited to discuss new opportunities and collaborate on
+        interesting projects.
       </p>
       <p>
         Whether you are an employer looking to schedule an interview or a client

@@ -1,9 +1,9 @@
-import React from "react";
-import HomepageHero from "./HomepageHero";
-import AboutPreview from "./AboutPreview";
-import ProjectPreview from "./ProjectPreview";
-import Essay from "./Essay";
-import ContactPreview from "./ContactPreview";
+import React from 'react';
+import HomepageHero from './HomepageHero';
+import AboutPreview from './AboutPreview';
+import ProjectPreview from './ProjectPreview';
+import Essay from './Essay';
+import ContactPreview from './ContactPreview';
 
 const Homepage = () => {
   return (

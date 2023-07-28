@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import "./RepositoryDetails.css";
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import './RepositoryDetails.css';
 
 const languageColors = {
-  Python: "#3572A5",
-  HTML: "#E34C26",
-  CSS: "#563D7C",
-  Ruby: "#701516",
-  JavaScript: "#B8860B",
-  Batchfile: "#008080",
-  Shell: "#228B22",
+  Python: '#3572A5',
+  HTML: '#E34C26',
+  CSS: '#563D7C',
+  Ruby: '#701516',
+  JavaScript: '#B8860B',
+  Batchfile: '#008080',
+  Shell: '#228B22',
 };
 
 const RepositoryDetails = ({ repo }) => {
@@ -25,12 +25,12 @@ const RepositoryDetails = ({ repo }) => {
           const percentage = Object.fromEntries(
             Object.entries(data).map(([key, value]) => [
               key,
-              ((value / total) * 100).toFixed(2) + "%",
+              ((value / total) * 100).toFixed(2) + '%',
             ]),
           );
           setLanguages(percentage);
         } catch (error) {
-          console.error("Error fetching languages:", error);
+          console.error('Error fetching languages:', error);
           setLanguages([]);
         }
       }
@@ -52,7 +52,7 @@ const RepositoryDetails = ({ repo }) => {
       <div>
         Languages Distribution:
         {Object.entries(languages).map(([language, percent]) => {
-          const color = languageColors[language] || "#000"; // default to black if language color isn't defined
+          const color = languageColors[language] || '#000'; // default to black if language color isn't defined
           return (
             <p key={language} style={{ color }}>
               {language}: {percent}
@@ -69,7 +69,7 @@ const RepositoryDetails = ({ repo }) => {
         </a>
         {repo.homepage && (
           <a href={repo.homepage} target="_blank" rel="noopener noreferrer">
-            View at GitHub Pages
+            View at {repo.homepage}
           </a>
         )}
       </div>

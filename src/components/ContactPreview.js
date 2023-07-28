@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./ContactPreview.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './ContactPreview.css';
 
 function ContactPreview() {
   return (

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./Essays.css";
-import Warning from "./Warning";
+import React, { useState } from 'react';
+import './Essays.css';
+import Warning from './Warning';
 
 const Essay3 = () => {
   const [showWarning, setShowWarning] = useState(true);
