@@ -5,6 +5,8 @@ This is a full-stack web application built using the React front-end framework a
 ## Project Structure
 
 The project has the following directory structure:
+
+```
 Portfolio/
 |-- node_modules/
 |-- ...
@@ -66,6 +68,7 @@ Portfolio/
 |-- package-lock.json
 |-- package.json
 |-- README.md
+```
 
 
 ## Installation and Usage
