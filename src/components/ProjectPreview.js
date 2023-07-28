@@ -3,16 +3,18 @@ import { Link } from 'react-router-dom';
 import './ProjectPreview.css';
 
 const ProjectPreview = () => {
+  // State to hold the fetched repositories
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
+    // Fetching repositories from GitHub API
     const fetchRepos = async () => {
       try {
         const response = await fetch(
           'https://api.github.com/users/SymbioticLove/repos',
           {
             headers: {
-              Authorization: ``,
+              Authorization: ``, // Placeholder for any required authentication
             },
           },
         );
@@ -43,21 +45,35 @@ const ProjectPreview = () => {
     fetchRepos();
   }, []);
 
+  // ProjectPreview component rendering
   return (
     <div className="project-preview">
+      {/* Project title */}
       <h1 className="project-title">Projects</h1>
+
+      {/* Project subtitle */}
       <p className="project-subtitle">
+        {/* Description of projects */}
         My projects cover a wide range of engineering disciplines. Click below
         to learn more!
       </p>
+
+      {/* Link to explore all projects */}
       <Link to="/projects">
         <button className="explore-button">Explore All Projects</button>
       </Link>
+
+      {/* Project list */}
       <div className="project-list">
         {repos.map(repo => (
           <div key={repo.id} className="project-item">
+            {/* Project name */}
             <h2>{repo.name}</h2>
+
+            {/* Project description */}
             <p>{repo.description}</p>
+
+            {/* Link to the project on GitHub */}
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
               View on GitHub
             </a>
@@ -68,4 +84,5 @@ const ProjectPreview = () => {
   );
 };
 
+// Exporting the 'ProjectPreview' component to be used in other parts of the application
 export default ProjectPreview;

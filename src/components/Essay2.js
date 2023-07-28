@@ -1,12 +1,16 @@
 import React from 'react';
 import './Essays.css';
 
+// Creating the functional component 'Essay2'
 const Essay2 = () => {
   return (
     <div className="essay-content">
+      {/* Essay title */}
       <h2 className="essay-title">
         The Multifaceted Virtues of Video Games: A Balancing Act
       </h2>
+
+      {/* First paragraph */}
       <p className="essay-text">
         The discussion around video games and their effects on individuals has
         traditionally oscillated between two opposing poles: those who argue for
@@ -17,6 +21,8 @@ const Essay2 = () => {
         responsibilities, is an increasingly compelling perspective in our
         technologically immersed society.
       </p>
+
+      {/* Subsequent paragraphs */}
       <p className="essay-text">
         An important benefit of video games is their capacity to improve
         cognitive abilities. Research has consistently shown that gaming can
@@ -64,6 +70,8 @@ const Essay2 = () => {
         value to our lives without taking away from our essential
         responsibilities.
       </p>
+
+      {/* Final paragraph */}
       <p className="essay-text">
         In conclusion, video games can offer a range of cognitive, social, and
         emotional benefits to individuals. They can serve as powerful tools to
@@ -76,10 +84,15 @@ const Essay2 = () => {
         acknowledges the potential of video games while also respecting the
         importance of our everyday duties and commitments.
       </p>
+
+      {/* Essay signature */}
       <h3 className="essay-sig">-Matthew Ford</h3>
+
+      {/* Revision note */}
       <p className="revision">With revision assistance from ChatGPT</p>
     </div>
   );
 };
 
+// Exporting the 'Essay2' component to be used in other parts of the application
 export default Essay2;

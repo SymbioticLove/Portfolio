@@ -4,9 +4,12 @@ import Essay2 from './Essay2';
 import Essay3 from './Essay3';
 import './Essay.css';
 
+// Creating the functional component 'Essay'
 const Essay = () => {
+  // State to keep track of the currently displayed essay
   const [currentEssay, setCurrentEssay] = useState('essay1');
 
+  // Function to render the currently selected essay component
   const renderEssay = () => {
     switch (currentEssay) {
       case 'essay1':
@@ -22,20 +25,28 @@ const Essay = () => {
 
   return (
     <div className="essay-section">
+      {/* Essays section title */}
       <h1 className="section-title">Essays</h1>
+
+      {/* Essay navigation buttons */}
       <div className="essay-nav">
+        {/* Button for Essay1 */}
         <button
           className={currentEssay === 'essay1' ? 'selected-essay' : ''}
           onClick={() => setCurrentEssay('essay1')}
         >
           GPT & Full-Stack Engineers
         </button>
+
+        {/* Button for Essay2 */}
         <button
           className={currentEssay === 'essay2' ? 'selected-essay' : ''}
           onClick={() => setCurrentEssay('essay2')}
         >
           Video Games: A Balancing Act
         </button>
+
+        {/* Button for Essay3 */}
         <button
           className={currentEssay === 'essay3' ? 'selected-essay' : ''}
           onClick={() => setCurrentEssay('essay3')}
@@ -43,9 +54,15 @@ const Essay = () => {
           Texas&apos;s Floating Buoy Wall
         </button>
       </div>
-      <div className="essay-content">{renderEssay()}</div>
+
+      {/* Container for the essay content */}
+      <div className="essay-content">
+        {/* Render the currently selected essay */}
+        {renderEssay()}
+      </div>
     </div>
   );
 };
 
+// Exporting the 'Essay' component to be used in other parts of the application
 export default Essay;

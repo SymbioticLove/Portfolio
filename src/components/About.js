@@ -1,11 +1,16 @@
+// Importing the required modules
 import React from 'react';
 import './About.css';
 
+// Creating the functional component 'About'
 const About = () => {
   return (
     <div className="about-section">
+      {/* About Me title */}
       <h1 className="about-title">About Me</h1>
+
       <div className="about-content">
+        {/* Profile picture */}
         <img
           className="about-image"
           src="https://placehold.co/400"
@@ -13,6 +18,7 @@ const About = () => {
         />
 
         <div className="about-details">
+          {/* Personal Details section */}
           <h2 className="details-title">Personal Details</h2>
           <p className="details-info">Location: Phoenix, AZ (UTC-7)</p>
           <p className="details-info">
@@ -20,14 +26,16 @@ const About = () => {
           </p>
           <p className="details-info">
             Contact:
-            <a href="tel:+19124381768"> +1(912)438-1768</a> |
+            <a href="tel:+19124381768"> +1(912) 438-1768</a> |
             <a href="mailto:Matthew@symbiotic.love"> Matthew@symbiotic.love</a>
           </p>
         </div>
 
         <div className="about-story">
+          {/* My Journey section */}
           <h2 className="story-title">My Journey</h2>
           <p className="story-text">
+            {/* Personal story and experience */}
             My engineering journey began 9 months ago out of necessity to start
             my own business with my wife, Jessela. But along the way, I
             discovered a deep passion for the field, especially for full-stack
@@ -37,6 +45,7 @@ const About = () => {
             an integral tool in my work.
           </p>
           <p className="story-text">
+            {/* More details about projects and skills */}
             I&apos;ve used my skills to create various projects and maintain our
             business systems, including our eCommerce platform on Shopify&apos;s
             Liquid framework, and our business site built with React. I have a
@@ -46,6 +55,7 @@ const About = () => {
             the EC-Council in light of my practical experience.
           </p>
           <p className="story-text">
+            {/* Future goals */}
             On the business side, Jessela and I bootstrapped costs over $20,000
             to launch our eCommerce platform, with a focus on community impact
             and environmental consciousness. As we transition into the
@@ -53,6 +63,7 @@ const About = () => {
             newfound skills in the tech industry.
           </p>
           <p className="story-links">
+            {/* Links to business website and shop */}
             <a
               href="https://symbiotic.love"
               target="_blank"
@@ -73,8 +84,10 @@ const About = () => {
         </div>
 
         <div className="about-skills">
+          {/* Skills section */}
           <h2 className="skills-title">Skills</h2>
           <ul className="skills-list">
+            {/* List of skills */}
             <li>React.js</li>
             <li>Python</li>
             <li>API&apos;s (Creation and Use, REST)</li>
@@ -100,4 +113,5 @@ const About = () => {
   );
 };
 
+// Exporting the 'About' component to be used in other parts of the application
 export default About;

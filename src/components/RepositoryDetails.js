@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './RepositoryDetails.css';
 
+// Object containing colors for different programming languages
 const languageColors = {
   Python: '#3572A5',
   HTML: '#E34C26',
@@ -13,8 +14,10 @@ const languageColors = {
 };
 
 const RepositoryDetails = ({ repo }) => {
+  // State to hold the percentage of languages used in the repository
   const [languages, setLanguages] = useState([]);
 
+  // Fetch the language distribution when the 'repo' prop changes
   useEffect(() => {
     const fetchLanguages = async () => {
       if (repo) {
@@ -22,6 +25,8 @@ const RepositoryDetails = ({ repo }) => {
           const response = await fetch(repo.languages_url);
           const data = await response.json();
           const total = Object.values(data).reduce((a, b) => a + b, 0);
+
+          // Calculate the percentage of each language used in the repository
           const percentage = Object.fromEntries(
             Object.entries(data).map(([key, value]) => [
               key,
@@ -39,12 +44,13 @@ const RepositoryDetails = ({ repo }) => {
     fetchLanguages();
   }, [repo]);
 
+  // If no repository is selected, render a message to select a repository
   if (!repo) {
     return (
       <div>
         <div className="select-a-repo">Select a repository to view details</div>
         <p className="main-gh-link">
-          {'Or vist the '}
+          {'Or visit the '}
           <a
             href="https://github.com/SymbioticLove"
             alt="Main portfolio link"
@@ -59,6 +65,7 @@ const RepositoryDetails = ({ repo }) => {
     );
   }
 
+  // If a repository is selected, render its details
   return (
     <div className="repository-details">
       <h2 className="details-repo-title">{repo.name}</h2>
@@ -66,7 +73,7 @@ const RepositoryDetails = ({ repo }) => {
       <div className="languages">
         Languages Distribution:
         {Object.entries(languages).map(([language, percent]) => {
-          const color = languageColors[language] || '#000'; // default to black if language color isn't defined
+          const color = languageColors[language] || '#000'; // Default to black if language color isn't defined
           return (
             <p key={language} style={{ color }}>
               {language}: {percent}
@@ -91,6 +98,7 @@ const RepositoryDetails = ({ repo }) => {
   );
 };
 
+// PropTypes for type-checking the 'repo' prop
 RepositoryDetails.propTypes = {
   repo: PropTypes.shape({
     languages_url: PropTypes.string,
@@ -102,4 +110,5 @@ RepositoryDetails.propTypes = {
   }).isRequired,
 };
 
+// Exporting the 'RepositoryDetails' component to be used in other parts of the application
 export default RepositoryDetails;

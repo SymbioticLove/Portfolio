@@ -1,12 +1,16 @@
 import React from 'react';
 import './Essays.css';
 
+// Creating the functional component 'Essay1'
 const Essay1 = () => {
   return (
     <div className="essay-content">
+      {/* Essay title */}
       <h2 className="essay-title">
         The Full-Stack Engineer and GPT: A One-Person Team
       </h2>
+
+      {/* First paragraph */}
       <p className="essay-text">
         In the ever-evolving landscape of technology, the role of a full-stack
         engineer has become increasingly significant. These professionals,
@@ -18,6 +22,8 @@ const Essay1 = () => {
         capabilities of these engineers, enabling them to function as a complete
         team in and of themselves.
       </p>
+
+      {/* Subsequent paragraphs */}
       <p className="essay-text">
         The GPT, a large-scale unsupervised language model, is a game-changer in
         the realm of software development. It&apos;s not about automation, but
@@ -58,6 +64,8 @@ const Essay1 = () => {
         It can also assist in decision-making by providing data-driven insights
         and predictions. This reduces the need for a project manager.
       </p>
+
+      {/* Final paragraph */}
       <p className="essay-text">
         In essence, a full-stack engineer, armed with GPT, can single-handedly
         manage the entire development lifecycle. They can design, develop,
@@ -85,9 +93,12 @@ const Essay1 = () => {
         industry, highlighting the potential of individuals when equipped with
         the right technology.
       </p>
+
+      {/* Essay signature */}
       <h3 className="essay-sig">-Matthew Ford and ChatGPT</h3>
     </div>
   );
 };
 
+// Exporting the 'Essay1' component to be used in other parts of the application
 export default Essay1;

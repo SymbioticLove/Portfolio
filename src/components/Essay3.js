@@ -2,19 +2,26 @@ import React, { useState } from 'react';
 import './Essays.css';
 import Warning from './Warning';
 
+// Creating the functional component 'Essay3'
 const Essay3 = () => {
+  // State to control whether to show the warning
   const [showWarning, setShowWarning] = useState(true);
 
+  // If showWarning is true, display the Warning component and handle onContinue
   if (showWarning) {
     return <Warning onContinue={() => setShowWarning(false)} />;
   }
 
+  // If showWarning is false, display the essay content
   return (
     <div className="essay-content">
+      {/* Essay title */}
       <h2 className="essay-title">
         The Rationale and Ramifications of Texas&apos;s Floating Buoy Wall: A
         Consequentialist Perspective
       </h2>
+
+      {/* Essay paragraphs */}
       <p className="essay-text">
         Governor Greg Abbot&apos;s decision to erect a floating buoy wall, armed
         with razor wire across the Rio Grande, stands as a stark emblem of a
@@ -85,6 +92,8 @@ const Essay3 = () => {
         this resolution that some find highly respectable, even amidst the
         controversy surrounding the approach.
       </p>
+
+      {/* Final paragraph */}
       <p className="essay-text">
         In conclusion, the debate surrounding Governor Abbot&apos;s decision to
         erect a buoy wall armed with razor wire on the Rio Grande is a complex
@@ -97,10 +106,15 @@ const Essay3 = () => {
         renewed discourse and policy-making efforts aimed at finding effective,
         long-term solutions to this persistent crisis.
       </p>
+
+      {/* Essay signature */}
       <h3 className="essay-sig">-Matthew Ford</h3>
+
+      {/* Revision note */}
       <p className="revision">With revision assistance from ChatGPT</p>
     </div>
   );
 };
 
+// Exporting the 'Essay3' component to be used in other parts of the application
 export default Essay3;
