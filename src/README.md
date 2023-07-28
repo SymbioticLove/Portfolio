@@ -1,6 +1,6 @@
 # App.js
 
-The `App.js` file serves as the entry point to the application and sets up the main structure for the React web application using the React Router.
+The `App.js` file serves as the entry point to the application and sets up the main structure for the React portfolio application using the React Router.
 
 ## Functionality
 
