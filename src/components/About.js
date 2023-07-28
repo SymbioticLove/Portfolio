@@ -11,11 +11,7 @@ const About = () => {
 
       <div className="about-content">
         {/* Profile picture */}
-        <img
-          className="about-image"
-          src="%PUBLIC_URL%/me.jpg"
-          alt="Matthew Ford"
-        />
+        <img className="about-image" src="/me-gray.jpg" alt="Matthew Ford" />
         <div className="about-details">
           {/* Personal Details section */}
           <h2 className="details-title">Personal Details</h2>
