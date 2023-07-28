@@ -53,6 +53,11 @@
     color: var(--accent);
     font-family: var(--sans);
     animation: fadeIn 3s forwards;
+    font-size: 1.8rem;
+}
+
+.hero-certifications-title2 {
+    font-size: 1.5rem;
 }
 
 .hero-certifications-description {
@@ -114,6 +119,7 @@
 @media (max-width: 767px) {
     .homepage-hero {
         padding: 20px;
+        background: linear-gradient(to bottom, var(--dgreen) 3%, var(--lgreen) 20%)
     }
 
     .hero-title {

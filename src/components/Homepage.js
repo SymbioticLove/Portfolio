@@ -3,14 +3,14 @@ import './Homepage.css';
 import HomepageHero from './HomepageHero';
 // import AboutPreview from './AboutPreview';
 // import ProjectPreview from ./ProjectPreview';
-// import Essay from './Essay';
-// import ContactPreview from './ContactPreview';
+import Essay from './Essay';
+import ContactPreview from './ContactPreview';
 
 const Homepage = () => {
     return (
         <main>
             <section className="hero-section">
-                {<HomepageHero />}
+                <HomepageHero />
             </section>
             <section className="about-preview">
                 {/* <AboutPreview /> */}
@@ -19,10 +19,10 @@ const Homepage = () => {
                 {/* <ProjectPreview /> */}
             </section>
             <section className="Essay">
-                {/* <Essay /> */}
+                <Essay />
             </section>
             <section className="contact-preview">
-                {/* <ContactPreview />*/}
+                {<ContactPreview />}
             </section>
         </main>
     );

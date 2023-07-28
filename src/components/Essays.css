@@ -1,0 +1,62 @@
+.essay-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    line-height: 1.6;
+    font-size: 18px;
+    color: var(--dgreen);
+}
+
+.essay-title {
+    color: var(--accent);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: var(--sans);
+}
+
+.essay-text {
+    margin-bottom: 1.5em;
+    text-indent: 2em;
+    font-family: var(--mont)
+}
+
+.essay-sig {
+    font-family: var(--sig);
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.revision {
+    margin-top: 0;
+    font-family: var(--robo);
+    font-size: .8rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .essay-content {
+        font-size: 16px;
+    }
+    .essay-title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .essay-content {
+        font-size: 14px;
+    }
+    .essay-title {
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .essay-content {
+        font-size: 12px;
+    }
+    .essay-title {
+        font-size: 1.5em;
+    }
+}
