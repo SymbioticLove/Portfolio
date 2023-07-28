@@ -18,7 +18,7 @@ Portfolio/
 |   |-- ...
 |
 |-- src/
-|   |-- App.js
+|   |-- App.js (App entry point)
 |   |-- App.css
 |   |-- index.js
 |   |-- index.css
@@ -62,7 +62,7 @@ Portfolio/
 |   |   |-- Essay3.css
 |   |   |-- README.md
 |
-|-- index.html (entry point)
+|-- index.html (Web entry point)
 |-- .env
 |-- .eslintrc.json
 |-- .gitignore
