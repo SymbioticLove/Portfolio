@@ -6,7 +6,11 @@ const HomepageHero = () => {
   return (
     <section className="homepage-hero">
       {/* Author image */}
-      <img src="/me.jpg" className="author-image" alt="Author" />
+      <img
+        src={`${process.env.PUBLIC_URL}/me.png`}
+        className="author-image"
+        alt="Author"
+      />
 
       {/* Hero certifications title */}
       <h2 className="hero-certifications-title">

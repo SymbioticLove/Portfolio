@@ -37,7 +37,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           {/* Route for any other path that doesn't match the above routes */}
-          {/* This will render the 'Homepage' component when the app is initially loaded */}
           <Route path="*" element={<Homepage />} />
         </Routes>
 

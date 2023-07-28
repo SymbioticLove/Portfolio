@@ -11,7 +11,11 @@ const About = () => {
 
       <div className="about-content">
         {/* Profile picture */}
-        <img className="about-image" src="/me-gray.jpg" alt="Matthew Ford" />
+        <img
+          className="about-image"
+          src={`${process.env.PUBLIC_URL}/me-gray.png`}
+          alt="Matthew Ford"
+        />
         <div className="about-details">
           {/* Personal Details section */}
           <h2 className="details-title">Personal Details</h2>
