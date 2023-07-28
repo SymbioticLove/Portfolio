@@ -105,7 +105,7 @@ Contributions to this project are welcome. If you find any bugs, have suggestion
 
 ## License
 
-Copyright [year] [Matthew Ford]
+Copyright 2023 Matthew Ford
 
 All rights reserved. No part of this project, including but not limited to the code and associated files, may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author, except for brief quotations or other non-commercial uses permitted by copyright law.
 
