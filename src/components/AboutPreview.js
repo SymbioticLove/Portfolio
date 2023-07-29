@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './AboutPreview.css';
 
 // Creating the functional component 'AboutPreview'
-const AboutPreview = () => {
+const AboutPreview = ({ scrollToTop }) => {
   return (
     <div className="about-preview-container">
       {/* AboutPreview content */}
@@ -21,7 +21,7 @@ const AboutPreview = () => {
         {/* Link to the full 'About' page */}
         <Link to="/Portfolio/about">
           {/* Learn More button */}
-          <button className="preview-button">Learn More</button>
+          <button className="preview-button" onClick={scrollToTop}>Learn More</button>
         </Link>
       </div>
     </div>

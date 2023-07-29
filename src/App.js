@@ -13,6 +13,14 @@ import Contact from './components/Contact';
 // Importing the main CSS file for the application
 import './App.css';
 
+// Function to scroll to the top of the page
+const scrollToTop = () => () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
 // The main functional component 'App'
 function App() {
   return (
@@ -25,7 +33,7 @@ function App() {
         {/* Configuring routes for different components */}
         <Routes>
           {/* Route for the homepage, displaying the 'Homepage' component */}
-          <Route path="/Portfolio" element={<Homepage />} />
+          <Route path="/Portfolio" element={<Homepage scrollToTop={scrollToTop()} />} />
 
           {/* Nested routes under the '/Portfolio' route */}
           <Route path="/Portfolio/about" element={<About />} />

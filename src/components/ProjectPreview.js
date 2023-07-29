@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './ProjectPreview.css';
 
-const ProjectPreview = () => {
+const ProjectPreview = ({ scrollToTop }) => {
   // State to hold the fetched repositories
   const [repos, setRepos] = useState([]);
 
@@ -77,7 +77,7 @@ const ProjectPreview = () => {
       </div>
       {/* Link to explore all projects */}
       <Link to="/Portfolio/projects">
-        <button className="explore-button">Explore All Projects</button>
+        <button className="explore-button" onClick={scrollToTop}>Explore All Projects</button>
       </Link>
     </div>
   );

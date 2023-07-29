@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './ContactPreview.css';
 
 // Creating the functional component 'ContactPreview'
-function ContactPreview() {
+function ContactPreview({ scrollToTop }) {
   return (
     <div className="contact-preview-wrapper">
       {/* ContactPreview content */}
@@ -22,7 +22,7 @@ function ContactPreview() {
         {/* Link to the full 'Contact' page */}
         <Link to="/Portfolio/contact">
           {/* Reach Out button */}
-          <button className="contact-btn">Reach Out</button>
+          <button className="contact-btn" onClick={scrollToTop}>Reach Out</button>
         </Link>
       </div>
     </div>

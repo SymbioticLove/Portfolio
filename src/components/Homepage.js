@@ -5,7 +5,7 @@ import ProjectPreview from './ProjectPreview';
 import Essay from './Essay';
 import ContactPreview from './ContactPreview';
 
-const Homepage = () => {
+const Homepage = ({ scrollToTop }) => {
   // Homepage component rendering
   return (
     <main>
@@ -18,13 +18,13 @@ const Homepage = () => {
       {/* About section */}
       <section className="about-preview">
         {/* Render the AboutPreview component */}
-        <AboutPreview />
+        <AboutPreview scrollToTop={scrollToTop}/>
       </section>
 
       {/* Project section */}
       <section className="project-preview">
         {/* Render the ProjectPreview component */}
-        <ProjectPreview />
+        <ProjectPreview scrollToTop={scrollToTop}/>
       </section>
 
       {/* Essay section */}
@@ -36,7 +36,7 @@ const Homepage = () => {
       {/* Contact section */}
       <section className="contact-preview">
         {/* Render the ContactPreview component */}
-        <ContactPreview />
+        <ContactPreview scrollToTop={scrollToTop}/>
       </section>
     </main>
   );

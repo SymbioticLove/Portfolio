@@ -2,18 +2,10 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ scrollToTop }) => {
   // Get the current location from the React Router
   const location = useLocation();
   const activePath = location.pathname;
-
-  // Function to scroll to the top of the page
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
 
   // Footer component rendering
   return (

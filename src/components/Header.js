@@ -10,7 +10,11 @@ const Header = () => {
   // Function to determine if the link should have an active class
   const isLinkActive = linkPath => {
     // Check if the current path is exactly matching the link's path
-    return currentPath === linkPath;
+    // Additionally, make home link active by default on root ("/") path
+    return (
+      currentPath === linkPath ||
+      (linkPath === '/Portfolio' && currentPath === '/')
+    );
   };
 
   // Header component rendering
