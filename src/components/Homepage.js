@@ -4,6 +4,7 @@ import AboutPreview from './AboutPreview';
 import ProjectPreview from './ProjectPreview';
 import Essay from './Essay';
 import ContactPreview from './ContactPreview';
+import PropTypes from 'prop-types';
 
 const Homepage = ({ scrollToTop }) => {
   // Homepage component rendering
@@ -18,13 +19,13 @@ const Homepage = ({ scrollToTop }) => {
       {/* About section */}
       <section className="about-preview">
         {/* Render the AboutPreview component */}
-        <AboutPreview scrollToTop={scrollToTop}/>
+        <AboutPreview scrollToTop={scrollToTop} />
       </section>
 
       {/* Project section */}
       <section className="project-preview">
         {/* Render the ProjectPreview component */}
-        <ProjectPreview scrollToTop={scrollToTop}/>
+        <ProjectPreview scrollToTop={scrollToTop} />
       </section>
 
       {/* Essay section */}
@@ -36,10 +37,14 @@ const Homepage = ({ scrollToTop }) => {
       {/* Contact section */}
       <section className="contact-preview">
         {/* Render the ContactPreview component */}
-        <ContactPreview scrollToTop={scrollToTop}/>
+        <ContactPreview scrollToTop={scrollToTop} />
       </section>
     </main>
   );
+};
+
+Homepage.propTypes = {
+  scrollToTop: PropTypes.func.isRequired,
 };
 
 // Exporting the 'Homepage' component to be used in other parts of the application

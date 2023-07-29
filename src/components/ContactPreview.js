@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ContactPreview.css';
+import PropTypes from 'prop-types';
 
 // Creating the functional component 'ContactPreview'
 function ContactPreview({ scrollToTop }) {
@@ -22,12 +23,18 @@ function ContactPreview({ scrollToTop }) {
         {/* Link to the full 'Contact' page */}
         <Link to="/Portfolio/contact">
           {/* Reach Out button */}
-          <button className="contact-btn" onClick={scrollToTop}>Reach Out</button>
+          <button className="contact-btn" onClick={scrollToTop}>
+            Reach Out
+          </button>
         </Link>
       </div>
     </div>
   );
 }
+
+ContactPreview.propTypes = {
+  scrollToTop: PropTypes.func.isRequired,
+};
 
 // Exporting the 'ContactPreview' component to be used in other parts of the application
 export default ContactPreview;

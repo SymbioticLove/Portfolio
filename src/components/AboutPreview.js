@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './AboutPreview.css';
+import PropTypes from 'prop-types';
 
 // Creating the functional component 'AboutPreview'
 const AboutPreview = ({ scrollToTop }) => {
@@ -21,11 +22,17 @@ const AboutPreview = ({ scrollToTop }) => {
         {/* Link to the full 'About' page */}
         <Link to="/Portfolio/about">
           {/* Learn More button */}
-          <button className="preview-button" onClick={scrollToTop}>Learn More</button>
+          <button className="preview-button" onClick={scrollToTop}>
+            Learn More
+          </button>
         </Link>
       </div>
     </div>
   );
+};
+
+AboutPreview.propTypes = {
+  scrollToTop: PropTypes.func.isRequired,
 };
 
 // Exporting the 'AboutPreview' component to be used in other parts of the application

@@ -14,7 +14,7 @@ import Contact from './components/Contact';
 import './App.css';
 
 // Function to scroll to the top of the page
-const scrollToTop = () => () => {
+const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth',
@@ -33,7 +33,10 @@ function App() {
         {/* Configuring routes for different components */}
         <Routes>
           {/* Route for the homepage, displaying the 'Homepage' component */}
-          <Route path="/Portfolio" element={<Homepage scrollToTop={scrollToTop()} />} />
+          <Route
+            path="/Portfolio"
+            element={<Homepage scrollToTop={scrollToTop} />}
+          />
 
           {/* Nested routes under the '/Portfolio' route */}
           <Route path="/Portfolio/about" element={<About />} />
@@ -41,11 +44,11 @@ function App() {
           <Route path="/Portfolio/contact" element={<Contact />} />
 
           {/* Route for any other path that doesn't match the above routes */}
-          <Route path="*" element={<Homepage />} />
+          <Route path="*" element={<Homepage scrollToTop={scrollToTop} />} />
         </Routes>
 
         {/* Rendering the Footer component */}
-        <Footer />
+        <Footer scrollToTop={scrollToTop} />
       </Router>
     </div>
   );

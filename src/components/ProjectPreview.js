@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './ProjectPreview.css';
+import PropTypes from 'prop-types';
 
 const ProjectPreview = ({ scrollToTop }) => {
   // State to hold the fetched repositories
@@ -77,10 +78,16 @@ const ProjectPreview = ({ scrollToTop }) => {
       </div>
       {/* Link to explore all projects */}
       <Link to="/Portfolio/projects">
-        <button className="explore-button" onClick={scrollToTop}>Explore All Projects</button>
+        <button className="explore-button" onClick={scrollToTop}>
+          Explore All Projects
+        </button>
       </Link>
     </div>
   );
+};
+
+ProjectPreview.propTypes = {
+  scrollToTop: PropTypes.func.isRequired,
 };
 
 // Exporting the 'ProjectPreview' component to be used in other parts of the application
