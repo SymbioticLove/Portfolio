@@ -29,7 +29,9 @@ const RepositoryList = ({ repos, onRepoSelect }) => {
   return (
     <div className="repository-list">
       <div className="favorites-section">
-        <h2 className="favorite-h2">Favorites</h2>
+        <h2 className="favorite-h2" id="Favorite-Projects">
+          Favorites
+        </h2>
         {/* Render the list of favorite repositories */}
         {favoriteRepos.map(repo => (
           <div
@@ -45,7 +47,9 @@ const RepositoryList = ({ repos, onRepoSelect }) => {
       </div>
       {/* Render the list of non-favorite repositories */}
       <div className="other-repos">
-        <h2 className="favorite-h2">Other Projects</h2>
+        <h2 className="favorite-h2" id="Other-Projects">
+          Other Projects
+        </h2>
         {otherRepos.map(repo => (
           <div
             key={repo.id}

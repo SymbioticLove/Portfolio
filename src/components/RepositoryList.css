@@ -23,6 +23,7 @@
   box-sizing: border-box;
   animation: fadeIn6 1s;
   direction: rtl;
+  cursor: s-resize;
 }
 
 .repository-list-item {
@@ -62,6 +63,11 @@
   font-family: var(--mont);
   font-weight: bold;
   letter-spacing: 0.1rem;
+}
+
+#Other-Projects,
+#Favorite-Projects {
+  font-weight: bold
 }
 
 @keyframes fadeIn6 {
