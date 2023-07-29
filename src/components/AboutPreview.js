@@ -14,7 +14,7 @@ const AboutPreview = ({ scrollToTop }) => {
 
         {/* Short preview text */}
         <p className="preview-text">
-          A dedicated engineer with a passion for problem-solving, My journey in
+          A dedicated engineer with a passion for problem-solving, my journey in
           the tech industry is one worth knowing. Get to know more about me and
           my skills.
         </p>
