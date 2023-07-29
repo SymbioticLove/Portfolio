@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found</title>
+</head>
+<body>
+  <script>
+    const currentLocation = window.location.href;
+    const newLocation = currentLocation.replace(/\/$/, '');
+    window.location.replace(newLocation);
+  </script>
+</body>
+</html>

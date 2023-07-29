@@ -8,7 +8,7 @@ const Header = () => {
   const currentPath = location.pathname;
 
   // Function to determine if the link should have an active class
-  const isLinkActive = (linkPath) => {
+  const isLinkActive = linkPath => {
     // Check if the current path is exactly matching the link's path
     return linkPath === currentPath || linkPath === `${currentPath}/`;
   };
@@ -26,9 +26,7 @@ const Header = () => {
       <nav className="header-nav">
         {/* Home link */}
         <Link
-          className={`nav-link ${
-            isLinkActive('/Portfolio') ? 'active' : ''
-          }`}
+          className={`nav-link ${isLinkActive('/Portfolio') ? 'active' : ''}`}
           to="/Portfolio"
         >
           Home
