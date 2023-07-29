@@ -63,6 +63,7 @@ Portfolio/
 |   |   |-- README.md
 |
 |-- index.html (Web entry point)
+|-- ...(images)
 |-- .env
 |-- .eslintrc.json
 |-- .gitignore
