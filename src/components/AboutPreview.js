@@ -23,7 +23,7 @@ const AboutPreview = ({ scrollToTop }) => {
         <Link to="/Portfolio/about">
           {/* Learn More button */}
           <button className="preview-button" onClick={scrollToTop}>
-            Learn More
+            Learn More ⇒
           </button>
         </Link>
       </div>

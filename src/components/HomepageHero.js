@@ -13,9 +13,7 @@ const HomepageHero = () => {
       />
 
       {/* Hero certifications title */}
-      <h2 className="hero-certifications-title">
-        Hey there. I&apos;m glad you&apos;re here!
-      </h2>
+      <h2 className="hero-certifications-title">Hey There!</h2>
 
       {/* Hero description */}
       <p className="hero-description">

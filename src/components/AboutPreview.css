@@ -22,6 +22,7 @@
   color: var(--dgreen);
   font-family: var(--sans);
   margin-bottom: 20px;
+  line-height: 2;
 }
 
 .preview-button {
@@ -32,7 +33,6 @@
   transition: background-color 0.3s ease;
   border: 2px solid var(--dgreen);
   height: 50px;
-  width: 150px;
   font-size: 1.2rem;
   color: var(--dgreen);
   margin-top: 0.2rem;
@@ -52,11 +52,7 @@
 }
 
 @media (max-width: 768px) {
-  /* Styles for mobile devices */
-  .preview-text {
-    font-size: 1rem;
-  }
   .preview-button {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 }

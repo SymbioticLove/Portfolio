@@ -48,7 +48,7 @@ const RepositoryDetails = ({ repo }) => {
   if (!repo) {
     return (
       <div>
-        <div className="select-a-repo">Select a repository to view details</div>
+        <div className="select-a-repo">Select a Repository to View Details</div>
         <p className="main-gh-link">
           {'Or visit the '}
           <a

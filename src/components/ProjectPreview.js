@@ -71,7 +71,7 @@ const ProjectPreview = ({ scrollToTop }) => {
 
             {/* Link to the project on GitHub */}
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-              View on GitHub
+              View on GitHub →
             </a>
           </div>
         ))}
@@ -79,7 +79,7 @@ const ProjectPreview = ({ scrollToTop }) => {
       {/* Link to explore all projects */}
       <Link to="/Portfolio/projects">
         <button className="explore-button" onClick={scrollToTop}>
-          Explore All Projects
+          Explore All Projects ⇒
         </button>
       </Link>
     </div>

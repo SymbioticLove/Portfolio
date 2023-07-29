@@ -91,11 +91,7 @@ a:hover {
     height: auto;
   }
 
-  .main-gh {
+  .main-gh-link {
     text-align: center;
-  }
-
-  .main-gh:hover {
-    margin-left: revert;
   }
 }

@@ -20,6 +20,7 @@
   text-indent: 2rem;
   font-family: var(--mont);
   font-size: 1rem;
+  line-height: 1.8;
 }
 
 .essay-sig {

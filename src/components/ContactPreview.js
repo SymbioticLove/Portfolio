@@ -24,7 +24,7 @@ function ContactPreview({ scrollToTop }) {
         <Link to="/Portfolio/contact">
           {/* Reach Out button */}
           <button className="contact-btn" onClick={scrollToTop}>
-            Reach Out
+            Reach Out ⇒
           </button>
         </Link>
       </div>

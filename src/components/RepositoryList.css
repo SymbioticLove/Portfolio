@@ -53,9 +53,15 @@
   text-align: left;
   color: var(--accent);
   font-size: 2rem;
-  font-family: var(--robo);
+  font-family: var(--mont);
   font-weight: normal;
   letter-spacing: 0.1rem;
+}
+
+.other-repos h2,
+.favorites-section h2 {
+  font-weight: normal;
+  font-family: var(--sans);
 }
 
 @keyframes fadeIn6 {
