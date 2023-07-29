@@ -8,8 +8,20 @@
         // Redirect to the URL with the hash
         window.location.replace(window.location.href);
       } else {
-        // Redirect to the homepage
-        window.location.replace('/Portfolio');
+        // Check if the URL matches one of the desired routes
+        if (
+          window.location.pathname === "/Portfolio/about" ||
+          window.location.pathname === "/Portfolio/contact" ||
+          window.location.pathname === "/Portfolio/projects"
+        ) {
+          // Redirect to the corresponding hash route
+          window.location.replace(
+            "https://symbioticlove.github.io/Portfolio/#" + window.location.pathname
+          );
+        } else {
+          // Redirect to the homepage
+          window.location.replace("/Portfolio");
+        }
       }
     </script>
   </head>
