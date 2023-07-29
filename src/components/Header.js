@@ -5,7 +5,13 @@ import './Header.css';
 const Header = () => {
   // Get the current location from the React Router
   const location = useLocation();
-  const activePath = location.pathname;
+  const currentPath = location.pathname;
+
+  // Function to determine if the link should have an active class
+  const isLinkActive = linkPath => {
+    // Check if the current path is exactly matching the link's path
+    return linkPath === currentPath;
+  };
 
   // Header component rendering
   return (
@@ -20,7 +26,7 @@ const Header = () => {
       <nav className="header-nav">
         {/* Home link */}
         <Link
-          className={`nav-link ${activePath === '/Portfolio' ? 'active' : ''}`}
+          className={`nav-link ${isLinkActive('/Portfolio') ? 'active' : ''}`}
           to="/Portfolio"
         >
           Home
@@ -29,7 +35,7 @@ const Header = () => {
         {/* Projects link */}
         <Link
           className={`nav-link ${
-            activePath === '/Portfolio/projects' ? 'active' : ''
+            isLinkActive('/Portfolio/projects') ? 'active' : ''
           }`}
           to="/Portfolio/projects"
         >
@@ -39,7 +45,7 @@ const Header = () => {
         {/* About link */}
         <Link
           className={`nav-link ${
-            activePath === '/Portfolio/about' ? 'active' : ''
+            isLinkActive('/Portfolio/about') ? 'active' : ''
           }`}
           to="/Portfolio/about"
         >
@@ -49,7 +55,7 @@ const Header = () => {
         {/* Contact link */}
         <Link
           className={`nav-link ${
-            activePath === '/Portfolio/contact' ? 'active' : ''
+            isLinkActive('/Portfolio/contact') ? 'active' : ''
           }`}
           to="/Portfolio/contact"
         >

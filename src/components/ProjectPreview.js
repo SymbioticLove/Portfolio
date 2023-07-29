@@ -58,11 +58,6 @@ const ProjectPreview = () => {
         to learn more!
       </p>
 
-      {/* Link to explore all projects */}
-      <Link to="/projects">
-        <button className="explore-button">Explore All Projects</button>
-      </Link>
-
       {/* Project list */}
       <div className="project-list">
         {repos.map(repo => (
@@ -80,6 +75,10 @@ const ProjectPreview = () => {
           </div>
         ))}
       </div>
+      {/* Link to explore all projects */}
+      <Link to="/projects">
+        <button className="explore-button">Explore All Projects</button>
+      </Link>
     </div>
   );
 };
