@@ -10,7 +10,7 @@ const Header = () => {
   // Function to determine if the link should have an active class
   const isLinkActive = linkPath => {
     // Check if the current path is exactly matching the link's path
-    return linkPath === currentPath || linkPath === `${currentPath}/`;
+    return currentPath === linkPath;
   };
 
   // Header component rendering
