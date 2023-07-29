@@ -76,7 +76,7 @@ const ProjectPreview = () => {
         ))}
       </div>
       {/* Link to explore all projects */}
-      <Link to="/projects">
+      <Link to="/Portfolio/projects">
         <button className="explore-button">Explore All Projects</button>
       </Link>
     </div>

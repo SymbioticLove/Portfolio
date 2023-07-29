@@ -19,7 +19,7 @@ const AboutPreview = () => {
         </p>
 
         {/* Link to the full 'About' page */}
-        <Link to="/about">
+        <Link to="/Portfolio/about">
           {/* Learn More button */}
           <button className="preview-button">Learn More</button>
         </Link>

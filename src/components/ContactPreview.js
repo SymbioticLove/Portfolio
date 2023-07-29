@@ -20,7 +20,7 @@ function ContactPreview() {
         </p>
 
         {/* Link to the full 'Contact' page */}
-        <Link to="/contact">
+        <Link to="/Portfolio/contact">
           {/* Reach Out button */}
           <button className="contact-btn">Reach Out</button>
         </Link>
