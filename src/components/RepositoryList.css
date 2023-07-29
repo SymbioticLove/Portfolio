@@ -48,20 +48,20 @@
   color: var(--lgreen);
 }
 
+.other-repos h2,
+.favorites-section h2 {
+  font-weight: normal;
+  font-family: var(--sans);
+}
+
 .favorite-h2 {
   margin-bottom: 20px;
   text-align: left;
   color: var(--accent);
   font-size: 2rem;
   font-family: var(--mont);
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0.1rem;
-}
-
-.other-repos h2,
-.favorites-section h2 {
-  font-weight: normal;
-  font-family: var(--sans);
 }
 
 @keyframes fadeIn6 {

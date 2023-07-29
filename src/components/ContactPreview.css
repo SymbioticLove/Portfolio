@@ -7,16 +7,17 @@
 }
 
 .contact-preview h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: var(--mont);
   margin-top: 0;
   color: var(--accent);
 }
 
 .contact-preview p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: var(--sans);
   padding: 10px;
+  line-height: 2;
 }
 
 .contact-btn {
@@ -55,10 +56,6 @@
 @media (max-width: 767px) {
   .contact-preview {
     height: auto;
-  }
-
-  .contact-preview h2 {
-    font-size: 1.2rem;
   }
 
   .contact-preview p {
