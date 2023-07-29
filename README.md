@@ -62,7 +62,6 @@ Portfolio/
 |   |   |-- Essay3.css
 |   |   |-- README.md
 |
-|-- index.html (Web entry point)
 |-- .env
 |-- .eslintrc.json
 |-- .gitignore
@@ -70,6 +69,8 @@ Portfolio/
 |-- package-lock.json
 |-- package.json
 |-- README.md
+|-- index.html (Web entry point)
+|-- ...(images)
 ```
 
 
