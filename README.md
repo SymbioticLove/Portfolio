@@ -90,7 +90,6 @@ The application will be accessible at `http://localhost:3000`.
   - **About page:** Contains information about the author's background and skills.
   - **Projects page:** Fetches repositories from GitHub API and displays project previews.
   - **Contact page:** Provides contact information.
-  - **Essay page:** Displays essays with a warning prompt before showing potentially controversial content.
 - The app uses React Router to handle navigation and display the appropriate components for each page.
 - The `HomepageHero`, `AboutPreview`, `ProjectPreview`, `Essay`, `ContactPreview`, `Repositories`, and `Warning` components are used to structure the home page.
 
