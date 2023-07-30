@@ -91,7 +91,7 @@ The application will be accessible at `http://localhost:3000`.
   - **Projects page:** Fetches repositories from GitHub API and displays project previews.
   - **Contact page:** Provides contact information.
 - The app uses React Router to handle navigation and display the appropriate components for each page.
-- The `HomepageHero`, `AboutPreview`, `ProjectPreview`, `Essay`, `ContactPreview`, `Repositories`, and `Warning` components are used to structure the home page.
+- The `HomepageHero`, `AboutPreview`, `ProjectPreview`, `Essay`, `ContactPreview`, and `Warning` components are used to structure the home page.
 
 ## External Dependencies
 
