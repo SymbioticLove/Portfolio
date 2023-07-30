@@ -22,7 +22,7 @@ const Essay = () => {
       case 'essay4':
         return <Essay4 />;
       default:
-        return <Essay1 />;
+        return <Essay4 />;
     }
   };
 
