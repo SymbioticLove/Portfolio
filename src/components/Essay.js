@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Essay1 from './Essay1';
 import Essay2 from './Essay2';
 import Essay3 from './Essay3';
+import Essay4 from './Essay4';
 import './Essay.css';
 
 // Creating the functional component 'Essay'
@@ -18,6 +19,8 @@ const Essay = () => {
         return <Essay2 />;
       case 'essay3':
         return <Essay3 />;
+      case 'essay4':
+        return <Essay4 />;
       default:
         return <Essay1 />;
     }
@@ -30,6 +33,14 @@ const Essay = () => {
 
       {/* Essay navigation buttons */}
       <div className="essay-nav">
+        {/* Button for Essay4 */}
+        <button
+          className={currentEssay === 'essay4' ? 'selected-essay' : ''}
+          onClick={() => setCurrentEssay('essay4')}
+        >
+          Skill vs. Education
+        </button>
+
         {/* Button for Essay1 */}
         <button
           className={currentEssay === 'essay1' ? 'selected-essay' : ''}
