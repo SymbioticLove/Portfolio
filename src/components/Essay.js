@@ -38,7 +38,7 @@ const Essay = () => {
           className={currentEssay === 'essay4' ? 'selected-essay' : ''}
           onClick={() => setCurrentEssay('essay4')}
         >
-          Skill vs. Education
+          Skill vs. College Education
         </button>
 
         {/* Button for Essay1 */}
