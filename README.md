@@ -76,7 +76,7 @@ Portfolio/
 
 ## Installation and Usage
 
-1. Clone the repository: `git clone https://github.com/username/react-flask-framework.git`
+1. Clone the repository: `git clone https://github.com/SymbioticLove/Portfolio.git`
 2. Navigate to the project directory: `cd c:\Portfolio`
 3. Install dependencies: `npm install react-router-dom`
 4. Run the development server: `npm start`
@@ -90,9 +90,8 @@ The application will be accessible at `http://localhost:3000`.
   - **About page:** Contains information about the author's background and skills.
   - **Projects page:** Fetches repositories from GitHub API and displays project previews.
   - **Contact page:** Provides contact information.
-  - **Essay page:** Displays essays with a warning prompt before showing potentially controversial content.
 - The app uses React Router to handle navigation and display the appropriate components for each page.
-- The `HomepageHero`, `AboutPreview`, `ProjectPreview`, `Essay`, `ContactPreview`, `Repositories`, and `Warning` components are used to structure the home page.
+- The `HomepageHero`, `AboutPreview`, `ProjectPreview`, `Essay`, `ContactPreview`, and `Warning` components are used to structure the home page.
 
 ## External Dependencies
 
