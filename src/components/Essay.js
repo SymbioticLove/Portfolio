@@ -8,7 +8,7 @@ import './Essay.css';
 // Creating the functional component 'Essay'
 const Essay = () => {
   // State to keep track of the currently displayed essay
-  const [currentEssay, setCurrentEssay] = useState('essay1');
+  const [currentEssay, setCurrentEssay] = useState('essay4');
 
   // Function to render the currently selected essay component
   const renderEssay = () => {
