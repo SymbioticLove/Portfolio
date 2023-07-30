@@ -76,7 +76,7 @@ Portfolio/
 
 ## Installation and Usage
 
-1. Clone the repository: `git clone https://github.com/username/react-flask-framework.git`
+1. Clone the repository: `git clone https://github.com/SymbioticLove/Portfolio.git`
 2. Navigate to the project directory: `cd c:\Portfolio`
 3. Install dependencies: `npm install react-router-dom`
 4. Run the development server: `npm start`
