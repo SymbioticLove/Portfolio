@@ -24,42 +24,60 @@ Portfolio/
 |   |-- index.css
 |   |-- setupTests.js
 |   |-- README.md
-|   |
+|
+|   |-- redux/
+|   |   |-- reducers.js
+|   |   |-- store.js
+|
+|   |-- data/
+|   |   |-- data.json
+|
 |   |-- components/
-|   |   |-- Header.js
-|   |   |-- Header.css
-|   |   |-- Footer.js
-|   |   |-- Footer.css
-|   |   |-- Homepage.js
-|   |   |-- Homepage.css
-|   |   |-- Repositories.js
-|   |   |-- Repositories.css
-|   |   |-- About.js
-|   |   |-- About.css
-|   |   |-- Contact.js
-|   |   |-- Contact.css
-|   |   |-- RepositoryList.js
-|   |   |-- RepositoryList.css
-|   |   |-- RepositoryDetails.js
-|   |   |-- RepositoryDetails.css
-|   |   |-- Warning.js
-|   |   |-- Warning.css
-|   |   |-- Essay.js
-|   |   |-- Essay.css
-|   |   |-- HomepageHero.js
-|   |   |-- HomepageHero.css
-|   |   |-- AboutPreview.js
-|   |   |-- AboutPreview.css
-|   |   |-- ProjectPreview.js
-|   |   |-- ProjectPreview.css
-|   |   |-- ContactPreview.js
-|   |   |-- ContactPreview.css
-|   |   |-- Essay1.js
-|   |   |-- Essay1.css
-|   |   |-- Essay2.js
-|   |   |-- Essay2.css
-|   |   |-- Essay3.js
-|   |   |-- Essay3.css
+|   |   |-- Header/
+|   |   |   |-- Header.js
+|   |   |   |-- Header.css
+|   |   |-- Footer/
+|   |   |   |-- Footer.js
+|   |   |   |-- Footer.css
+|   |   |-- Homepage/
+|   |   |   |-- Homepage.js
+|   |   |   |-- Homepage.css
+|   |   |-- Repositories/
+|   |   |   |-- Repositories.js
+|   |   |   |-- Repositories.css
+|   |   |-- About/
+|   |   |   |-- About.js
+|   |   |   |-- About.css
+|   |   |-- Contact/
+|   |   |   |-- Contact.js
+|   |   |   |-- Contact.css
+|   |   |-- RepositoryList/
+|   |   |   |-- RepositoryList.js
+|   |   |   |-- RepositoryList.css
+|   |   |-- RepositoryDetails/
+|   |   |   |-- RepositoryDetails.js
+|   |   |   |-- RepositoryDetails.css
+|   |   |-- Warning/
+|   |   |   |-- Warning.js
+|   |   |   |-- Warning.css
+|   |   |-- Essay/
+|   |   |   |-- Essay.js
+|   |   |   |-- Essay.css
+|   |   |-- HomepageHero/
+|   |   |   |-- HomepageHero.js
+|   |   |   |-- HomepageHero.css
+|   |   |-- AboutPreview/
+|   |   |   |-- AboutPreview.js
+|   |   |   |-- AboutPreview.css
+|   |   |-- ProjectPreview/
+|   |   |   |-- ProjectPreview.js
+|   |   |   |-- ProjectPreview.css
+|   |   |-- ContactPreview/
+|   |   |   |-- ContactPreview.js
+|   |   |   |-- ContactPreview.css
+|   |   |-- Essays/
+|   |   |   |-- Essays.js
+|   |   |   |-- Essays.css
 |   |   |-- README.md
 |
 |-- .env
@@ -69,7 +87,7 @@ Portfolio/
 |-- package-lock.json
 |-- package.json
 |-- README.md
-|-- index.html (Web entry point)
+|-- index.html
 |-- ...(images)
 ```
 
