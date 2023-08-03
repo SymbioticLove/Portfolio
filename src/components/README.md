@@ -22,9 +22,9 @@ The `components` directory contains several React components that are used to bu
 
 9. **Warning**: The `Warning` component displays a warning message before the user can access certain content.
 
-10. **Essay**: The `Essay` component displays the `Essay1`-`Essay4` components.
+10. **Essay**: The `Essay` component displays the `Essays` component.
 
-11. **Essays**: The `Essays` component fetches and displays the static essay content.
+11. **Essays**: The `Essays` component fetches and displays static essay content.
 
 12. **HomepageHero**: The `HomepageHero` component represents the hero section of the homepage, displaying an image and introductory text.
 
