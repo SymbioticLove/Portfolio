@@ -16,6 +16,16 @@ const Footer = ({ scrollToTop }) => {
 
   const { signature } = useSelector(state => state.about.signature);
 
+  // Function to determine if the link should have an active class
+  const isLinkActive = linkPath => {
+    // Check if the current path is exactly matching the link's path
+    // Additionally, make home link active by default on root ("/") path
+    return (
+      activePath === linkPath ||
+      (linkPath === '/Portfolio' && activePath === '/')
+    );
+  };
+
   // Footer component rendering
   return (
     <footer className="footer">
@@ -28,7 +38,7 @@ const Footer = ({ scrollToTop }) => {
       <nav className="footer-nav">
         {/* Home link */}
         <Link
-          className={`nav-link ${activePath === '/Portfolio' ? 'active' : ''}`}
+          className={`nav-link ${isLinkActive('/Portfolio') ? 'active' : ''}`}
           to="/Portfolio"
           onClick={scrollToTop}
         >
