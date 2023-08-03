@@ -1,11 +1,36 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import CertCarousel from '../CertCarousel/CertCarousel';
 import './About.css';
 
 const About = () => {
   const { aboutTitle, personalDetails, myJourney, skills } = useSelector(
     state => state.about.about,
   );
+
+  // Function to replace keywords with links in the paragraph
+  const renderParagraphWithLinks = paragraph => {
+    const portfolioLink = 'https://github.com/SymbioticLove/Portfolio';
+    const portfolioPrimeLink =
+      'https://github.com/SymbioticLove/PortfolioPrime';
+
+    const updatedParagraph = paragraph
+      .replace(
+        /this portfolio/g,
+        `<a href="${portfolioLink}" target="_blank" rel="noopener noreferrer" class="port-links">this portfolio</a>`,
+      )
+      .replace(
+        /PortfolioPrime/g,
+        `<a href="${portfolioPrimeLink}" target="_blank" rel="noopener noreferrer" class="port-links">PortfolioPrime</a>`,
+      );
+
+    return (
+      <p
+        className="story-text"
+        dangerouslySetInnerHTML={{ __html: updatedParagraph }}
+      />
+    );
+  };
 
   return (
     <div className="about-section">
@@ -40,9 +65,9 @@ const About = () => {
           {/* My Journey section */}
           <h2 className="story-title">My Journey</h2>
           {myJourney.story.map((paragraph, index) => (
-            <p key={index} className="story-text">
-              {paragraph}
-            </p>
+            <React.Fragment key={index}>
+              {renderParagraphWithLinks(paragraph)}
+            </React.Fragment>
           ))}
           <p className="story-links">
             {/* Links to business website and shop */}
@@ -75,6 +100,7 @@ const About = () => {
           </ul>
         </div>
       </div>
+      <CertCarousel />
     </div>
   );
 };

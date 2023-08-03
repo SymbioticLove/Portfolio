@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
-import '../Essay1/Essays.css';
+import './Essays.css';
 import Warning from '../Warning/Warning';
+import PropTypes from 'prop-types';
 
-const Essay3 = () => {
-  // State to control whether to show the warning
-  const [showWarning, setShowWarning] = useState(true);
-
+const Essays = ({ essayType, showWarning, setShowWarning }) => {
   // Using useSelector to get data from the Redux store
-  const essay3Data = useSelector(state => state.about.essay3);
+  const essayData = useSelector(state => state.about[essayType]);
   const { signature, revisionNote } = useSelector(
     state => state.about.signature,
   );
@@ -18,14 +16,14 @@ const Essay3 = () => {
     return <Warning onContinue={() => setShowWarning(false)} />;
   }
 
-  // If showWarning is false, display the essay content
+  // If showWarning is false, display the essays content
   return (
     <div className="essay-content">
       {/* Essay title */}
-      <h2 className="essay-title">{essay3Data.essay3Title}</h2>
+      <h2 className="essay-title">{essayData[`${essayType}Title`]}</h2>
 
       {/* Essay paragraphs */}
-      {essay3Data.essay3Content.map((paragraph, index) => (
+      {essayData[`${essayType}Content`].map((paragraph, index) => (
         <p key={index} className="essay-text">
           {paragraph}
         </p>
@@ -40,5 +38,12 @@ const Essay3 = () => {
   );
 };
 
-// Exporting the 'Essay3' component to be used in other parts of the application
-export default Essay3;
+// Prop validation
+Essays.propTypes = {
+  essayType: PropTypes.oneOf(['essay1', 'essay2', 'essay3', 'essay4'])
+    .isRequired,
+  showWarning: PropTypes.bool.isRequired,
+  setShowWarning: PropTypes.func.isRequired,
+};
+
+export default Essays;

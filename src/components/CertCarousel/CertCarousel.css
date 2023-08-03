@@ -1,0 +1,33 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 2rem 0;
+}
+
+.carousel-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.slider {
+  width: 100%;
+}
+
+/* Styles for the images in the carousel */
+.image-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 2rem auto;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .image-slide img {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+}

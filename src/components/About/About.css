@@ -44,7 +44,7 @@
   margin: 10px 0;
   font-family: var(--sans);
   color: var(--dgreen);
-  line-height: 1.8;
+  line-height: 2.2;
 }
 
 .story-links {
@@ -71,6 +71,13 @@
   font-family: var(--robo);
   color: var(--dgreen);
   display: initial;
+}
+
+.port-links {
+  color: var(--accent);
+}
+.port-links:hover {
+  color: var(--dgreen);
 }
 
 @keyframes fadeIn4 {
