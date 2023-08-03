@@ -1,21 +1,20 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Warning.css';
 
 const Warning = ({ onContinue }) => {
+  const { warningTitle, warningText } = useSelector(
+    state => state.about.warning,
+  );
+
   return (
     <div className="warning-content">
       {/* Warning title */}
-      <h2 className="warning-title">Warning</h2>
+      <h2 className="warning-title">{warningTitle}</h2>
 
       {/* Warning text */}
-      <p className="warning-text">
-        The opinions expressed in this essay may be controversial. I strive to
-        provide a fair and even assessment of all situations, as well as an
-        objective assessment of their ramifications. This is not intended to be
-        divisive. It is intended to foster genuine debate through which a real
-        solution to a humanitarian crisis can be found.
-      </p>
+      <p className="warning-text">{warningText}</p>
 
       {/* Continue button */}
       <button className="warning-continue" onClick={onContinue}>

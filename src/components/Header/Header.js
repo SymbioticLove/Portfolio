@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import './Header.css';
 
 const Header = () => {
   // Get the current location from the React Router
   const location = useLocation();
   const currentPath = location.pathname;
+  const { headerTitle, headerSubtitle } = useSelector(
+    state => state.about.header,
+  );
+  const { homeButton, projectsButton, aboutButton, contactButton } =
+    useSelector(state => state.about.navigation);
 
   // Function to determine if the link should have an active class
   const isLinkActive = linkPath => {
@@ -22,8 +28,8 @@ const Header = () => {
     <header className="header">
       {/* Title and subtitle */}
       <div>
-        <h1 className="header-title">Matthew Ford</h1>
-        <h3 className="header-subtitle">Utility Full-Stack Engineer</h3>
+        <h1 className="header-title">{headerTitle}</h1>
+        <h3 className="header-subtitle">{headerSubtitle}</h3>
       </div>
 
       {/* Navigation links */}
@@ -33,7 +39,7 @@ const Header = () => {
           className={`nav-link ${isLinkActive('/Portfolio') ? 'active' : ''}`}
           to="/Portfolio"
         >
-          Home
+          {homeButton}
         </Link>
 
         {/* Projects link */}
@@ -43,7 +49,7 @@ const Header = () => {
           }`}
           to="/Portfolio/projects"
         >
-          Projects
+          {projectsButton}
         </Link>
 
         {/* About link */}
@@ -53,7 +59,7 @@ const Header = () => {
           }`}
           to="/Portfolio/about"
         >
-          About
+          {aboutButton}
         </Link>
 
         {/* Contact link */}
@@ -63,7 +69,7 @@ const Header = () => {
           }`}
           to="/Portfolio/contact"
         >
-          Contact
+          {contactButton}
         </Link>
       </nav>
     </header>

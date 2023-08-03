@@ -1,24 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import './ContactPreview.css';
 import PropTypes from 'prop-types';
 
 // Creating the functional component 'ContactPreview'
 function ContactPreview({ scrollToTop }) {
+  const { contactPreviewTitle, contactPreviewText } = useSelector(
+    state => state.about.contactPreview,
+  );
+
   return (
     <div className="contact-preview-wrapper">
       {/* ContactPreview content */}
       <div className="contact-preview">
         {/* Section title */}
-        <h2>Connect With Me</h2>
+        <h2>{contactPreviewTitle}</h2>
 
         {/* Introduction paragraph */}
-        <p>
-          I am always interested in new opportunities and challenges. Whether
-          you have a question about my skills and experience, need assistance
-          with your project, or just want to connect and chat, I&apos;d love to
-          hear from you. Don&apos;t hesitate to drop me a line!
-        </p>
+        <p>{contactPreviewText}</p>
 
         {/* Link to the full 'Contact' page */}
         <Link to="/Portfolio/contact">

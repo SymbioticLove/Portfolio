@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import './ProjectPreview.css';
 import PropTypes from 'prop-types';
 
 const ProjectPreview = ({ scrollToTop }) => {
   // State to hold the fetched repositories
   const [repos, setRepos] = useState([]);
+  const { projectPreviewTitle, projectPreviewSubtitle } = useSelector(
+    state => state.about.projectPreview,
+  );
 
   useEffect(() => {
     // Fetching repositories from GitHub API
@@ -26,7 +30,7 @@ const ProjectPreview = ({ scrollToTop }) => {
           const repoNames = [
             'Demo-Product-Page',
             'React-Flask-Boilerplate',
-            'Python-Web-Scraper',
+            'PortfolioPrime',
             'Restaurant-POS-System',
             'Recipe-Bot-Training',
             'Portfolio',
@@ -50,13 +54,12 @@ const ProjectPreview = ({ scrollToTop }) => {
   return (
     <div className="project-preview">
       {/* Project title */}
-      <h1 className="project-title">Projects</h1>
+      <h1 className="project-title">{projectPreviewTitle}</h1>
 
       {/* Project subtitle */}
       <p className="project-subtitle">
         {/* Description of projects */}
-        My projects cover a wide range of engineering disciplines. Click below
-        to learn more!
+        {projectPreviewSubtitle}
       </p>
 
       {/* Project list */}

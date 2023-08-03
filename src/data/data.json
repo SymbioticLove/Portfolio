@@ -1,0 +1,155 @@
+{
+    "navigation": {
+        "homeButton": "Home",
+        "projectsButton": "Projects",
+        "aboutButton": "About",
+        "contactButton": "Contact"
+    },
+    "header": {
+        "headerTitle": "Matthew Ford",
+        "headerSubtitle": "Utility Full-Stack Engineer"
+    },
+    "homepageHero": {
+        "heroTitle": "Hey There!",
+        "heroText": "I am a utility full-stack engineer, forged through unconventional training, with the adaptability and competence to work across development teams. My journey in the engineering field is characterized by practical application and production-quality work spanning the entire development process. While my prowess is prominently showcased in areas such as React, Python, and API creation and usage, my capabilities extend far beyond. With approximately 2000 hours of hands-on experience, I have developed job-ready proficiency in a wide array of disciplines that empowers me to conquer a diverse range of technical challenges."
+    },
+    "aboutPreview": {
+        "aboutPreviewTitle": "About Me",
+        "aboutPreviewText": "A dedicated engineer with a passion for problem-solving, my journey in the tech industry is one worth knowing. Get to know more about me and my skills."
+    },
+    "projectPreview": {
+        "projectPreviewTitle": "Projects",
+        "projectPreviewSubtitle": "My projects cover a wide range of engineering disciplines. Click below to learn more!"
+    },
+    "essay": {
+        "essaySectionTitle": "Essays",
+        "essay1Title": "Skill vs. College Education",
+        "essay2Title": "GPT & Full-Stack Engineers",
+        "essay3Title": "Video Games: A Balancing Act",
+        "essay4Title": "Texas's Floating Buoy Wall"
+    },
+    "essay1": {
+        "essay1Title": "The Full-Stack Engineer and GPT: A One-Person Team",
+        "essay1Content": [
+            "In the ever-evolving landscape of technology, the role of a full-stack engineer has become increasingly significant. These professionals, equipped with a comprehensive understanding of both front-end and back-end development, are capable of handling the entire pipeline of a project, from inception to deployment and post-deployment management. However, the advent of advanced AI technologies, such as OpenAI's Generative Pretrained Transformer (GPT), has further amplified the capabilities of these engineers, enabling them to function as a complete team in and of themselves.",
+            "The GPT, a large-scale unsupervised language model, is a game-changer in the realm of software development. It's not about automation, but rather the vast knowledge it provides. By leveraging GPT, a full-stack engineer can access a wealth of information, insights, and solutions that would typically require a team of specialists.",
+            "The first point of consideration is the design and development phase. Here, a full-stack engineer is responsible for creating the user interface, developing the server-side logic, setting up the database, and ensuring seamless communication between the front-end and back-end. With GPT, the engineer can generate code snippets, debug errors, and even design algorithms. It can provide solutions to complex problems, reducing the need for multiple developers. GPT can also offer insights into best practices and coding standards, ensuring high-quality code.",
+            "Next, in the deployment phase, the engineer must configure servers, manage hosting environments, and ensure the application's scalability. GPT can assist in these tasks by providing detailed instructions and guidelines. It can help the engineer understand the nuances of different hosting environments, troubleshoot issues, and optimize the application for better performance. This reduces the need for a dedicated DevOps team.",
+            "Post-deployment management involves monitoring the application, fixing bugs, and making necessary updates. GPT can help the engineer identify potential issues, suggest fixes, and even predict future problems based on patterns. It can also assist in understanding user feedback and implementing changes accordingly. This eliminates the need for a separate maintenance team.",
+            "Moreover, GPT can aid in project management. It can help the engineer plan the project, estimate timelines, and manage resources effectively. It can also assist in decision-making by providing data-driven insights and predictions. This reduces the need for a project manager.",
+            "In essence, a full-stack engineer, armed with GPT, can single-handedly manage the entire development lifecycle. They can design, develop, deploy, and maintain an application, all while managing the project effectively. This is not to say that teams are no longer necessary. Collaboration, diversity of thought, and team dynamics are still crucial aspects of software development. However, the point being made here is about the potential of an individual when equipped with the right technology.",
+            "The combination of a full-stack engineer and GPT is a powerful one. It represents a shift in the traditional team structure, where multiple specialists are required to manage different aspects of a project. With GPT, a single engineer can now handle these tasks, increasing efficiency and reducing costs. This is a testament to the transformative power of AI and its potential to redefine roles in the tech industry.",
+            "In conclusion, the advent of AI technologies like GPT has significantly enhanced the capabilities of full-stack engineers. By leveraging the knowledge provided by GPT, these professionals can function as a complete team, handling everything from development to deployment to post-deployment management. This is a paradigm shift in the tech industry, highlighting the potential of individuals when equipped with the right technology."
+        ],
+        "essay1Sig": "-Matthew Ford and ChatGPT"
+    },
+      "essay2": {
+        "essay2Title": "The Multifaceted Virtues of Video Games: A Balancing Act",
+        "essay2Content": [
+            "The discussion around video games and their effects on individuals has traditionally oscillated between two opposing poles: those who argue for their detrimental impacts, and those who advocate for their potential benefits. While valid arguments exist on both sides of the spectrum, the idea that video games offer a predominantly positive influence on individuals, up until the point where they interfere with fulfilling responsibilities, is an increasingly compelling perspective in our technologically immersed society.",
+            "An important benefit of video games is their capacity to improve cognitive abilities. Research has consistently shown that gaming can enhance visual-spatial skills, problem-solving abilities, and memory recall. Particularly, strategy games often demand players to process large amounts of information simultaneously, plan ahead, and make quick decisions. This cognitive engagement can translate into improved abilities in real-world scenarios, enhancing our mental agility.",
+            "Video games also act as a conduit for social interaction. In a world progressively moving towards digital landscapes, multiplayer and online gaming platforms provide an avenue for building friendships, fostering teamwork, and practicing communication skills. In fact, many games necessitate cooperation and collaboration to overcome challenges, thereby offering a new dynamic to social interaction that goes beyond physical borders. As a result, gaming can be a facilitative tool in developing and maintaining social relationships, debunking the stereotype of the isolated gamer.",
+            "Moreover, video games can play a pivotal role in emotional wellbeing. They provide a sense of achievement and satisfaction, offering an escape from the stresses of daily life. Therapeutic uses of video games are being explored, with some preliminary results suggesting they can help alleviate symptoms of anxiety and depression. Therefore, video games may be seen not only as a form of entertainment but also as a tool for emotional and psychological support.",
+            "Critics of video gaming often highlight potential dangers such as addiction, social isolation, and cognitive impairment. While these concerns should not be overlooked, it is important to note that they often arise when gaming habits become uncontrolled and start to interfere with individuals' responsibilities. As with any recreational activity, moderation and balance are key.",
+            "The ability to distinguish between leisure and responsibility is a skill that needs to be cultivated. Adults should guide children in setting boundaries around gaming time to ensure it does not compromise their academic, social, or physical activities. Similarly, adults themselves must be cautious not to let their gaming habits impede their work or personal relationships. When properly managed, video gaming can add value to our lives without taking away from our essential responsibilities.",
+            "In conclusion, video games can offer a range of cognitive, social, and emotional benefits to individuals. They can serve as powerful tools to improve mental agility, foster social connections, and provide emotional solace. However, the key to harnessing these benefits lies in ensuring a balance between gaming and other facets of life. By promoting healthy gaming habits and setting clear boundaries around gaming time, we can enjoy the manifold benefits of video games without letting them interfere with our responsibilities. It is a balancing act that acknowledges the potential of video games while also respecting the importance of our everyday duties and commitments."
+        ]
+    },
+    "essay3": {
+        "essay3Title": "The Rationale and Ramifications of Texas's Floating Buoy Wall: A Consequentialist Perspective",
+        "essay3Content": [
+            "Governor Greg Abbot's decision to erect a floating buoy wall, armed with razor wire across the Rio Grande, stands as a stark emblem of a hard-line policy directed towards illegal immigration. This action, although controversial, is believed by some to address an ongoing issue of illicit border crossing that many perceive as exacerbating social, economic, and security challenges. Those in favor argue that it's a practical solution to a problem that has eluded resolution for decades, irrespective of its optics.",
+            "The Texas border crisis has been an ongoing issue, characterized by irregular migration patterns and human smuggling. The circumstances faced by immigrants once they manage to cross into the U.S. are no less harsh, ranging from job competition with legal citizens to various forms of exploitation. The buoy wall, in essence, is seen as a deterrent strategy aimed at halting this influx and consequently curbing the resultant problems.",
+            "Abbot's methodology has been viewed by some as controversial, mainly due to the potential harm to a subset of individuals attempting to cross. However, those with a more consequentialist view argue that the potential benefits — improved national security, reduced pressure on public resources, and protection of U.S. job market — significantly outweigh the potential harm. The argument posits that while the means might be extreme, the ends are deemed sufficiently beneficial to justify the approach.",
+            "Critics argue that the focus should be on addressing the root causes of migration rather than implementing hard-line border measures. They point towards the need for comprehensive immigration reform, better living conditions in countries of origin, and increased legal avenues for immigration. While these points are valid, they represent long-term goals that require significant international collaboration and political will.",
+            "Abbot's solution, while immediate and drastic, is considered by his supporters as a step towards actually addressing the problem. It's seen as action against a tide of inaction and indecision. The appeal lies in the direct, tangible response to an issue often mired in political rhetoric and unfulfilled promises.",
+            "One aspect of this debate that deserves attention is the nature of the problem itself. It is not solely a matter of national security or economics, but also a human rights issue. A significant number of those attempting to cross are asylum seekers or victims of circumstances beyond their control. The razor wire buoy wall doesn't distinguish between these groups and illegal economic migrants. This raises ethical questions about the collateral damage of such an approach, and whether the solution is as clear-cut as it might seem.",
+            "Supporters of Abbot's action argue that despite its potential harm, it forces the conversation and policy-making out of stagnation. By presenting a concrete, albeit divisive, solution, it challenges the status quo, compelling critics to propose viable alternatives, not just theoretical ones.",
+            "This perspective upholds Governor Abbot's decision as not merely a way to solve the problem but a challenge to others to engage more proactively. His refusal to be swayed by the potential political fallout stands as a testament to his commitment to resolving the crisis. It is this resolution that some find highly respectable, even amidst the controversy surrounding the approach.",
+            "In conclusion, the debate surrounding Governor Abbot's decision to erect a buoy wall armed with razor wire on the Rio Grande is a complex one. It's a policy seen as either a necessary, practical solution to a long-standing problem, or a drastic action that risks causing harm and infringing upon human rights. This argument underscores the ongoing challenge of balancing national interests with ethical considerations in the contentious issue of illegal immigration. However, what seems clear is that Abbot's bold approach has reignited the debate, compelling renewed discourse and policy-making efforts aimed at finding effective, long-term solutions to this persistent crisis."
+        ]
+    },
+    "essay4": {
+        "essay4Title": "Rethinking the College Degree: Its Role and Relevance in Modern Tech Hiring",
+        "essay4Content": [
+            "In the contemporary landscape of technological innovation, the disconnect between traditional education and real-world skills has never been more apparent. As technology evolves at a breakneck pace, traditional hiring practices that prioritize formal college degrees over demonstrable skills can be misguided, and at times, self-defeating. This essay explores the reasons behind this anomaly and argues for a paradigm shift in hiring practices.",
+            "In a world marked by continuous technological innovation, the methods of learning have expanded far beyond the traditional four walls of academia. With the advent of online platforms, coding bootcamps, self-study programs, and various open-source resources, acquiring tech skills has become accessible to all. Yet, the emphasis on formal degrees in the hiring process persists, a practice increasingly at odds with the realities of the industry.",
+            "The modern technology industry is characterized by rapid change. New frameworks and languages emerge, and existing ones evolve or become obsolete at an unprecedented rate. In this dynamic context, the rigid structure of traditional education can lag behind, teaching concepts and technologies that might no longer be relevant upon graduation. Meanwhile, self-taught individuals and those utilizing alternative education platforms can adapt quickly, learning and implementing the latest tools and methodologies as they emerge.",
+            "One must consider the value of practical experience and hands-on involvement with real projects. Theoretical understanding acquired in the classroom may form a foundation, but it is often the application of this knowledge in real-world scenarios that cultivates true mastery. Individuals who have embarked on their own journeys of discovery, investing time and effort in various projects, have frequently demonstrated a sophisticated understanding of multiple technologies and platforms. This intricate understanding spans across various roles, including design, front-end and back-end development, project management, and DevOps.",
+            "However, despite these valuable competencies, many hiring departments continue to filter candidates based on the possession of a formal degree, often dismissing those without the 'right' educational background. This practice overlooks the very essence of what the degree was initially meant to signify: competence and skill. By sidelining experienced and competent individuals in favor of fresh graduates who may lack hands-on experience, companies are unwittingly limiting their own potential.",
+            "The consequences of such an approach extend far beyond individual careers; they can significantly impact businesses and even entire industries. The opportunity costs of overlooking non-traditional yet immensely skilled talents are substantial. Companies that cling to outdated hiring practices may find themselves falling behind competitors who are agile enough to recognize and harness the value of diverse and practical skillsets.",
+            "Furthermore, this insistence on formal education raises questions about social equity and accessibility. Not everyone has the means or opportunity to pursue a traditional college degree, yet they may possess the drive, passion, and aptitude to excel in the technological field. A skill-based approach to hiring would democratize opportunities and foster a more inclusive and innovative workforce.",
+            "In conclusion, the persistent emphasis on formal college degrees in the hiring process, particularly in the rapidly evolving field of technology, is becoming increasingly self-defeating. The future lies in recognizing and nurturing talent, irrespective of its origin. By embracing a more holistic, skill-based approach to hiring, companies can tap into a broader, more diverse talent pool, fostering innovation and ensuring a competitive edge in the global technological landscape. This shift in mindset is not just a matter of fairness; it's a matter of forward-thinking and wise business strategy in an ever-changing technological world."
+        ]
+    },
+    "contactPreview": {
+        "contactPreviewTitle": "Connect With Me",
+        "contactPreviewText": "I am always interested in new opportunities and challenges. Whether you have a question about my skills and experience, need assistance with your project, or just want to connect and chat, I'd love to hear from you. Don't hesitate to drop me a line!"
+    },
+    "about": {
+        "aboutTitle": "About Me",
+        "personalDetails": {
+            "location": "Phoenix, AZ (UTC-7)",
+            "languages": "Native - English, Semi-fluent - Español/Deutsch",
+            "contact": {
+            "phone": "+1(912) 438-1768",
+            "email": "Matthew@symbiotic.love"
+            }
+        },
+        "myJourney": {
+            "story": [
+            "My engineering journey began out of necessity to start my own business with my wife, Jessela. But along the way, I discovered a deep passion for the field, especially for full-stack engineering and architecture. Through dedicated effort, I've amassed almost 2000 practical hours and have become comfortable with any syntax, largely due to the advent of ChatGPT, which has become an integral tool in my work.",
+            "I've used my skills to create various projects and maintain our business systems, including our eCommerce platform on Shopify's Liquid framework, and our business site built with React. I have a diverse portfolio that showcases my skills in AI training, web design, Python scripting, and more. I also have research access to GPT4's API and have received invitations for certification from the EC-Council in light of my practical experience.",
+            "On the business side, Jessela and I bootstrapped costs over $20,000 to launch our eCommerce platform, with a focus on community impact and environmental consciousness. As we transition into the maintenance phase of our start-up, I'm excited to deploy my newfound skills in the tech industry."
+            ],
+            "links": {
+            "businessWebsite": "https://symbiotic.love",
+            "shop": "https://shop.symbiotic.love"
+            }
+        },
+        "skills": [
+            "React.js",
+            "Python",
+            "API's (Creation and Use, REST)",
+            "Redux",
+            "React Native",
+            "System Administration",
+            "Prompt Engineering and ML",
+            "HTML5",
+            "CSS3",
+            "SEO",
+            "Accessibility",
+            "SaaS Platforms",
+            "SQL",
+            "Tailwind CSS",
+            "Node.js",
+            "Vue.js",
+            "Angular",
+            "Rust",
+            "Electron",
+            "Agile Kanban"
+        ]
+    },
+    "contact": {
+        "contactTitle": "Contact Me",
+        "introduction": "I am a passionate web developer, with a keen eye and more determination than most. Whatever you need, we can always make it happen together. If you have any questions or concerns, feel free to reach out. I'm always excited to discuss new opportunities and collaborate on interesting projects.",
+        "collaboration": "Whether you are an employer looking to schedule an interview or a client in need of assistance with your freelance projects, I'm here to help. Let's create something amazing together!",
+        "emailButtonLabel": "Email Me",
+        "emailButtonHref": "mailto:matthew@symbiotic.love",
+        "callButtonLabel": "Call Me",
+        "callButtonHref": "tel:+19124381768",
+        "closing": "Thank you for visiting my portfolio and taking the time to explore my work. I appreciate your interest and look forward to connecting with you soon!" 
+    },
+    "warning": {
+        "warningTitle": "Warning",
+        "warningText": "The opinions expressed in this essay may be controversial. I strive to provide a fair and even assessment of all situations, as well as an objective assessment of their ramifications. This is not intended to be divisive. It is intended to foster genuine debate through which a real solution to a humanitarian crisis can be found."
+    },
+    "signature": {
+        "signature": "Matthew Ford",
+        "revisionNote": "With revision assistance from ChatGPT"
+    },
+    "footer": {
+        "thanks": "You're awesome.",
+        "regards": "Warm Regards,"
+    }
+}

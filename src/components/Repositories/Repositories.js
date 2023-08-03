@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import RepositoryList from './RepositoryList';
-import RepositoryDetails from './RepositoryDetails';
+import RepositoryList from '../RepositoryList/RepositoryList';
+import RepositoryDetails from '../RepositoryDetails/RepositoryDetails';
 import './Repositories.css';
 
 const Repositories = () => {

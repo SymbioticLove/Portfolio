@@ -3,12 +3,14 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Importing custom components for Header, Footer, Homepage, Repositories, About, and Contact
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Homepage from './components/Homepage';
-import Repositories from './components/Repositories';
-import About from './components/About';
-import Contact from './components/Contact';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Homepage from './components/Homepage/Homepage';
+import Repositories from './components/Repositories/Repositories';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 // Importing the main CSS file for the application
 import './App.css';
@@ -24,33 +26,35 @@ const scrollToTop = () => {
 // The main functional component 'App'
 function App() {
   return (
-    // Wrapping the entire application with the 'Router' for navigation
-    <div className="wrapper">
-      <Router>
-        {/* Rendering the Header component */}
-        <Header />
+    // Wrapping the entire application with 'Provider' for Redux
+    <Provider store={store}>
+      <div className="wrapper">
+        <Router>
+          {/* Rendering the Header component */}
+          <Header />
 
-        {/* Configuring routes for different components */}
-        <Routes>
-          {/* Route for the homepage, displaying the 'Homepage' component */}
-          <Route
-            path="/Portfolio"
-            element={<Homepage scrollToTop={scrollToTop} />}
-          />
+          {/* Configuring routes for different components */}
+          <Routes>
+            {/* Route for the homepage, displaying the 'Homepage' component */}
+            <Route
+              path="/Portfolio"
+              element={<Homepage scrollToTop={scrollToTop} />}
+            />
 
-          {/* Nested routes under the '/Portfolio' route */}
-          <Route path="/Portfolio/about" element={<About />} />
-          <Route path="/Portfolio/projects" element={<Repositories />} />
-          <Route path="/Portfolio/contact" element={<Contact />} />
+            {/* Nested routes under the '/Portfolio' route */}
+            <Route path="/Portfolio/about" element={<About />} />
+            <Route path="/Portfolio/projects" element={<Repositories />} />
+            <Route path="/Portfolio/contact" element={<Contact />} />
 
-          {/* Route for any other path that doesn't match the above routes */}
-          <Route path="*" element={<Homepage scrollToTop={scrollToTop} />} />
-        </Routes>
+            {/* Route for any other path that doesn't match the above routes */}
+            <Route path="*" element={<Homepage scrollToTop={scrollToTop} />} />
+          </Routes>
 
-        {/* Rendering the Footer component */}
-        <Footer scrollToTop={scrollToTop} />
-      </Router>
-    </div>
+          {/* Rendering the Footer component */}
+          <Footer scrollToTop={scrollToTop} />
+        </Router>
+      </div>
+    </Provider>
   );
 }
 

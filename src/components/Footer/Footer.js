@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import './Footer.css';
 import PropTypes from 'prop-types';
 
@@ -7,14 +8,21 @@ const Footer = ({ scrollToTop }) => {
   // Get the current location from the React Router
   const location = useLocation();
   const activePath = location.pathname;
+  // Get data from Redux
+  const { homeButton, projectsButton, aboutButton, contactButton } =
+    useSelector(state => state.about.navigation);
+
+  const { thanks, regards } = useSelector(state => state.about.footer);
+
+  const { signature } = useSelector(state => state.about.signature);
 
   // Footer component rendering
   return (
     <footer className="footer">
       {/* Footer heading */}
-      <h2 className="thanks">You&apos;re awesome.</h2>
-      <h3 className="regards">Warm Regards,</h3>
-      <p className="signature">Matthew Ford</p>
+      <h2 className="thanks">{thanks}</h2>
+      <h3 className="regards">{regards}</h3>
+      <p className="signature">{signature}</p>
 
       {/* Footer navigation */}
       <nav className="footer-nav">
@@ -24,7 +32,7 @@ const Footer = ({ scrollToTop }) => {
           to="/Portfolio"
           onClick={scrollToTop}
         >
-          Home
+          {homeButton}
         </Link>
 
         {/* Projects link */}
@@ -35,7 +43,7 @@ const Footer = ({ scrollToTop }) => {
           to="/Portfolio/projects"
           onClick={scrollToTop}
         >
-          Projects
+          {projectsButton}
         </Link>
 
         {/* About link */}
@@ -46,7 +54,7 @@ const Footer = ({ scrollToTop }) => {
           to="/Portfolio/about"
           onClick={scrollToTop}
         >
-          About
+          {aboutButton}
         </Link>
 
         {/* Contact link */}
@@ -57,7 +65,7 @@ const Footer = ({ scrollToTop }) => {
           to="/Portfolio/contact"
           onClick={scrollToTop}
         >
-          Contact
+          {contactButton}
         </Link>
 
         {/* Back to Top button */}

@@ -1,9 +1,9 @@
 import React from 'react';
-import HomepageHero from './HomepageHero';
-import AboutPreview from './AboutPreview';
-import ProjectPreview from './ProjectPreview';
-import Essay from './Essay';
-import ContactPreview from './ContactPreview';
+import HomepageHero from '../HomepageHero/HomepageHero';
+import AboutPreview from '../AboutPreview/AboutPreview';
+import ProjectPreview from '../ProjectPreview/ProjectPreview';
+import Essay from '../Essay/Essay';
+import ContactPreview from '../ContactPreview/ContactPreview';
 import PropTypes from 'prop-types';
 
 const Homepage = ({ scrollToTop }) => {
