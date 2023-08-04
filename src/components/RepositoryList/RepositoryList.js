@@ -13,10 +13,10 @@ const RepositoryList = ({ repos, onRepoSelect }) => {
   // Define the list of favorite repository names
   const favorites = [
     'Portfolio',
+    'PortfolioPrime',
+    'PrimeNative',
     'Built-Demo-Product-Page',
     'Restaurant-POS-System',
-    'Python-Web-Scraper',
-    'React-Flask-Boilerplate',
     'Recipe-Bot-Training',
   ];
 

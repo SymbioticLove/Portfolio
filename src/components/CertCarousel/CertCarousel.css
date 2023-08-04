@@ -8,7 +8,7 @@
 
 .carousel-wrapper {
   max-width: 1000px;
-  width: 100%;
+  width: 95%;
   padding: 0 20px;
 }
 
@@ -20,7 +20,7 @@
 .image-slide img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 15px;
   margin: 2rem auto;
 }
 
@@ -29,5 +29,6 @@
   .image-slide img {
     max-width: 90%;
     margin: 1rem auto;
+    border-radius: 5px;
   }
 }
