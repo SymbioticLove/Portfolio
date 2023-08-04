@@ -22,22 +22,18 @@ The `components` directory contains several React components that are used to bu
 
 9. **Warning**: The `Warning` component displays a warning message before the user can access certain content.
 
-10. **Essay**: The `Essay` component displays the `Essay1`-`Essay3` components.
+10. **Essay**: The `Essay` component displays the `Essays` component.
 
-11. **Essay1**: The `Essay1` component displays essay content with additional revision assistance.
+11. **Essays**: The `Essays` component fetches and displays static essay content.
 
-12. **Essay2**: Similar to the `Essay` component, `Essay2` renders the content of a different essay.
+12. **HomepageHero**: The `HomepageHero` component represents the hero section of the homepage, displaying an image and introductory text.
 
-13. **Essay3**: Similar to the `Essay` component, `Essay3` renders the content of another essay.
+13. **AboutPreview**: The `AboutPreview` component displays a preview of the "About" section with summarized information.
 
-14. **HomepageHero**: The `HomepageHero` component represents the hero section of the homepage, displaying an image and introductory text.
+14. **ProjectPreview**: The `ProjectPreview` component displays a preview of the "Projects" section with summarized information.
 
-15. **AboutPreview**: The `AboutPreview` component displays a preview of the "About" section with summarized information.
+15. **ContactPreview**: The `ContactPreview` component displays a preview of the "Contact" section with summarized information.
 
-16. **ProjectPreview**: The `ProjectPreview` component displays a preview of the "Projects" section with summarized information.
-
-17. **ContactPreview**: The `ContactPreview` component displays a preview of the "Contact" section with summarized information.
-
-18. **Warning**: The `Warning` component displays a warning message before the user can access certain content.
+16. **Warning**: The `Warning` component displays a warning message before the user can access certain content.
 
 Each component has its specific responsibilities and contributes to creating a well-structured and functional web application. They work together to provide a seamless user experience while navigating through different sections and accessing relevant information.
