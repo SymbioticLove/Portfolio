@@ -30,10 +30,12 @@ const Essays = ({ essayType, showWarning, setShowWarning }) => {
       ))}
 
       {/* Essay signature */}
-      <h3 className="essay-sig">-{signature}</h3>
+      <h3 className="essay-sig">
+        {essayType === 'essay1' ? essayData['essay1Sig'] : signature}
+      </h3>
 
       {/* Revision note */}
-      <p className="revision">{revisionNote}</p>
+      {essayType !== 'essay1' && <p className="revision">{revisionNote}</p>}
     </div>
   );
 };
