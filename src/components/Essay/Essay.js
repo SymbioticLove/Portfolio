@@ -13,6 +13,7 @@ const Essay = () => {
     essay2Title,
     essay3Title,
     essay4Title,
+    essay5Title,
   } = useSelector(state => state.about.essay);
 
   const renderEssay = () => {
@@ -30,6 +31,8 @@ const Essay = () => {
             setShowWarning={setShowWarning}
           />
         );
+      case 'essay5':
+        return <Essays key="essay5" essayType="essay5" showWarning={false} />;
       case 'essay4':
       default:
         return <Essays key="essay4" essayType="essay4" showWarning={false} />;
@@ -46,6 +49,12 @@ const Essay = () => {
           onClick={() => setCurrentEssay('essay4')}
         >
           {essay1Title}
+        </button>
+        <button
+          className={currentEssay === 'essay5' ? 'selected-essay' : ''}
+          onClick={() => setCurrentEssay('essay5')}
+        >
+          {essay5Title}
         </button>
         <button
           className={currentEssay === 'essay1' ? 'selected-essay' : ''}

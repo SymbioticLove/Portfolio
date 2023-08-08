@@ -40,7 +40,7 @@ const Essays = ({ essayType, showWarning, setShowWarning }) => {
 
 // Prop validation
 Essays.propTypes = {
-  essayType: PropTypes.oneOf(['essay1', 'essay2', 'essay3', 'essay4'])
+  essayType: PropTypes.oneOf(['essay1', 'essay2', 'essay3', 'essay4', 'essay5'])
     .isRequired,
   showWarning: PropTypes.bool.isRequired,
   setShowWarning: PropTypes.func.isRequired,
