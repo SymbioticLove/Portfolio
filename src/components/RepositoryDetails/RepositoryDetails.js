@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './RepositoryDetails.css';
+import ChartDisplay from '../ChartDisplay/ChartDisplay';
 
 // Object containing colors for different programming languages
 const languageColors = {
@@ -48,6 +49,7 @@ const RepositoryDetails = ({ repo }) => {
   if (!repo) {
     return (
       <div>
+        <ChartDisplay />
         <div className="select-a-repo">Select a Repository to View Details</div>
         <p className="main-gh-link">
           {'Or visit the '}

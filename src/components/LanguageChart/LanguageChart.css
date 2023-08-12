@@ -1,0 +1,47 @@
+.fade-in-text {
+  opacity: 0;
+  animation: fadeIn100 ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn100 {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.total-div {
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--accent);
+    font-family: var(--mont);
+    font-weight: bold;
+}
+
+.fade-in-text.outer-text text,
+.fade-in-text.outer-text tspan,
+.lines {
+    fill: var(--dgreen);
+    font-family: var(--sans);
+}
+
+.inner-upper,
+.inner-lower,
+.lower,
+text,
+tspan {
+    font-family: var(--robo);
+    font-size: .9rem;
+}
+
+.lines {
+    stroke: var(--accent);
+}
+
+@media (max-width: 767px) {
+    .r-container {
+        display: none;
+    }
+    .total-div {
+        display: none;
+    }
+}
