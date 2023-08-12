@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { PieChart, Pie, Cell, LabelList, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import './LanguageChart.css';
 
 const accent = '#6c3483';
-
-const renderCustomizedLabel = ({
-  cx,
-  cy,
-  midAngle,
-  outerRadius,
-  name,
-  bytes,
-}) => {
+const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, name }) => {
   const RADIAN = Math.PI / 180;
   const offset = 50; // Length of the line outside the slice
 
@@ -32,9 +24,6 @@ const renderCustomizedLabel = ({
   const x3 = x2 + (name === 'Batchfile' || name === 'Ruby' ? 25 : 0); // Extend line for specific labels
   const y3 = y2;
 
-  // Format bytes with commas
-  const formattedBytes = bytes.toLocaleString();
-
   // Inside labels
   if (['CSS', 'JavaScript', 'Python', 'HTML'].includes(name)) {
     let xInside = cx + (outerRadius / 2) * Math.cos(-midAngle * RADIAN);
@@ -42,25 +31,14 @@ const renderCustomizedLabel = ({
 
     // Specific adjustments for HTML
     if (name === 'HTML') {
-      xInside += 19;
-      yInside -= 8;
+      xInside += 25;
+      yInside -= 5;
     }
 
     // Specific adjustments for CSS
     if (name === 'CSS') {
-      yInside -= 35;
-      xInside += 15;
-    }
-
-    // Specific adjustments for Python
-    if (name === 'Python') {
-      xInside += 5;
-      yInside -= 10;
-    }
-
-    // Specific adjustments for JavaScript
-    if (name === 'JavaScript') {
-      yInside -= 7;
+      yInside -= 15;
+      xInside += 7;
     }
 
     return (
@@ -73,9 +51,6 @@ const renderCustomizedLabel = ({
         className="fade-in-text inner-upper"
       >
         {name}
-        <tspan x={xInside} dy="18" className="inner-lower">
-          Bytes: {formattedBytes}
-        </tspan>
       </text>
     );
   }
@@ -109,9 +84,6 @@ const renderCustomizedLabel = ({
         className="fade-in-text outer-text"
       >
         {name}
-        <tspan x={x3 || x2} dy="15" className="outer-text lower">
-          Bytes: {formattedBytes}
-        </tspan>
       </text>
     </g>
   );
@@ -164,8 +136,7 @@ const LanguageChart = () => {
     <div>
       <div className="fade-in-text total-div">
         Total Bytes: {totalBytes.toLocaleString()}
-      </div>{' '}
-      {/* Display total bytes */}
+      </div>
       <ResponsiveContainer width="100%" height={325} className="r-container">
         <PieChart>
           <Pie
@@ -185,7 +156,6 @@ const LanguageChart = () => {
               />
             ))}
           </Pie>
-          <LabelList dataKey="name" position="inside" />
         </PieChart>
       </ResponsiveContainer>
     </div>

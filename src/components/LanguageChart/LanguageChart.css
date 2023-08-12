@@ -31,10 +31,11 @@ text,
 tspan {
     font-family: var(--robo);
     font-size: .9rem;
+    color: var(--lgreen);
 }
 
 .lines {
-    stroke: var(--accent);
+    stroke: var(--dgreen);
 }
 
 @media (max-width: 767px) {
