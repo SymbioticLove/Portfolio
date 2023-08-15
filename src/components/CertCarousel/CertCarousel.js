@@ -45,7 +45,7 @@ function CertCarousel() {
           {filenames.map((filename, index) => (
             <div key={index} className="image-slide">
               <img
-                src={`${process.env.PUBLIC_URL}/${filename}.png`}
+                src={`${process.env.PUBLIC_URL}/assets/${filename}.png`}
                 alt={`Image ${filename}`}
               />
             </div>
