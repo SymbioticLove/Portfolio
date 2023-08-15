@@ -4,43 +4,30 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import './LanguageChart.css';
 
 const accent = '#6c3483';
-const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, name }) => {
+const renderCustomizedLabel = ({
+  cx,
+  cy,
+  midAngle,
+  outerRadius,
+  name,
+  index,
+}) => {
   const RADIAN = Math.PI / 180;
-  const offset = 50; // Length of the line outside the slice
+  const baseOffset = 160; // Length of the longest line
+  const decrement = 15; // Amount to decrement for each slice
+  const offset = baseOffset - decrement * index; // Length of the line for this slice
 
-  let angle;
-  if (name === 'Batchfile') {
-    angle = 60; // Angle to the right for Batchfile
-  } else if (name === 'Ruby') {
-    angle = -60; // Angle to the right for Ruby
-  } else {
-    angle = 0; // Default angle (straight right)
-  }
-
-  const x1 = cx + (outerRadius - 5) * Math.cos(-midAngle * RADIAN);
-  const y1 = cy + (outerRadius - 5) * Math.sin(-midAngle * RADIAN);
-  const x2 = x1 + offset * Math.cos(angle * RADIAN);
-  const y2 = y1 + offset * Math.sin(angle * RADIAN);
-  const x3 = x2 + (name === 'Batchfile' || name === 'Ruby' ? 25 : 0); // Extend line for specific labels
-  const y3 = y2;
+  const x1 = cx + (outerRadius - 10) * Math.cos(-midAngle * RADIAN);
+  const y1 = cy + (outerRadius - 0) * Math.sin(-midAngle * RADIAN);
+  const x2 = x1 + offset * Math.cos(-midAngle * RADIAN);
+  const y2 = y1 + offset * Math.sin(-midAngle * RADIAN);
+  const x3 = x2 + 10; // Extend line for specific labels
 
   // Inside labels
   if (['CSS', 'JavaScript', 'Python', 'HTML'].includes(name)) {
     let xInside = cx + (outerRadius / 2) * Math.cos(-midAngle * RADIAN);
     let yInside = cy + (outerRadius / 2) * Math.sin(-midAngle * RADIAN);
-
-    // Specific adjustments for HTML
-    if (name === 'HTML') {
-      xInside += 25;
-      yInside -= 5;
-    }
-
-    // Specific adjustments for CSS
-    if (name === 'CSS') {
-      yInside -= 15;
-      xInside += 7;
-    }
-
+    // Specific adjustments for labels can be added here
     return (
       <text
         x={xInside}
@@ -62,22 +49,20 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, name }) => {
         y1={y1}
         x2={x2}
         y2={y2}
-        stroke={accent}
+        stroke="#000"
         className="fade-in-text lines"
       />
-      {name === 'Batchfile' || name === 'Ruby' ? (
-        <line
-          x1={x2}
-          y1={y2}
-          x2={x3}
-          y2={y3}
-          stroke={accent}
-          className="fade-in-text lines"
-        />
-      ) : null}
+      <line
+        x1={x2}
+        y1={y2}
+        x2={x3}
+        y2={y2}
+        stroke="#000"
+        className="fade-in-text lines"
+      />
       <text
-        x={x3 || x2}
-        y={y3 || y2}
+        x={x3}
+        y={y2}
         fill={accent}
         textAnchor="start"
         dominantBaseline="central"
@@ -101,6 +86,7 @@ const LanguageChart = () => {
     Ruby: '#701516',
     Shell: '#4EAA25',
     Batchfile: '#C1F12E',
+    Java: '#6F4E37',
   };
 
   useEffect(() => {
@@ -119,14 +105,18 @@ const LanguageChart = () => {
         }
       }
 
-      setTotalBytes(bytesTotal); // Set total bytes
+      // Filter languages that comprise more than 1% of the total bytes
+      const threshold = 0.01 * bytesTotal;
+      const filteredStats = Object.keys(stats)
+        .filter(language => stats[language] > threshold)
+        .map(language => ({
+          name: language,
+          value: stats[language],
+          bytes: stats[language],
+        }));
 
-      const formattedStats = Object.keys(stats).map(language => ({
-        name: language,
-        value: stats[language],
-        bytes: stats[language], // Include the total bytes
-      }));
-      setLanguageStats(formattedStats);
+      setTotalBytes(bytesTotal); // Set total bytes
+      setLanguageStats(filteredStats);
     };
 
     fetchRepositories();
@@ -146,7 +136,7 @@ const LanguageChart = () => {
             outerRadius={150}
             fill="#8884d8"
             dataKey="value"
-            label={renderCustomizedLabel}
+            label={props => renderCustomizedLabel(props, languageStats.length)}
             labelLine={false}
           >
             {languageStats.map((entry, index) => (

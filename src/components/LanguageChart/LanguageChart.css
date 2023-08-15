@@ -35,7 +35,7 @@ tspan {
 }
 
 .lines {
-    stroke: var(--dgreen);
+    stroke: var(#000);
 }
 
 @media (max-width: 767px) {
