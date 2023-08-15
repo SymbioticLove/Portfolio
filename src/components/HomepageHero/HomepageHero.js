@@ -31,7 +31,7 @@ const HomepageHero = () => {
       {/* Author image */}
       <img
         ref={imageRef}
-        src={`${process.env.PUBLIC_URL}/assets/me.jpg`}
+        src={`${process.env.PUBLIC_URL}/me.jpg`}
         className="author-image"
         alt="Author"
       />
