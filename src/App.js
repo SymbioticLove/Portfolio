@@ -9,6 +9,8 @@ import Homepage from './components/Homepage/Homepage';
 import Repositories from './components/Repositories/Repositories';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+
+// Importing the Provider and store
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
