@@ -28,6 +28,17 @@ const HomepageHero = () => {
 
   return (
     <section className="homepage-hero">
+      {/* Hero certifications title */}
+      <div className="hero-title-container">
+        <h2 className="hero-certifications-title">{heroTitle}</h2>
+
+        {/* Hero description */}
+        <p className="hero-description">
+          {/* Content about the author */}
+          {heroText}
+        </p>
+      </div>
+
       {/* Author image */}
       <img
         ref={imageRef}
@@ -35,15 +46,6 @@ const HomepageHero = () => {
         className="author-image"
         alt="Author"
       />
-
-      {/* Hero certifications title */}
-      <h2 className="hero-certifications-title">{heroTitle}</h2>
-
-      {/* Hero description */}
-      <p className="hero-description">
-        {/* Content about the author */}
-        {heroText}
-      </p>
     </section>
   );
 };
