@@ -99,7 +99,7 @@
   .homepage-hero {
     padding: 20px;
     background: linear-gradient(to bottom, var(--dgreen) 3%, var(--lgreen) 20%);
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .hero-title-container {
     width: 80%;
