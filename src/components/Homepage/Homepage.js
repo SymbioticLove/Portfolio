@@ -16,16 +16,16 @@ const Homepage = ({ scrollToTop }) => {
         <HomepageHero />
       </section>
 
-      {/* About section */}
-      <section className="about-preview">
-        {/* Render the AboutPreview component */}
-        <AboutPreview scrollToTop={scrollToTop} />
-      </section>
-
       {/* Project section */}
       <section className="project-preview">
         {/* Render the ProjectPreview component */}
         <ProjectPreview scrollToTop={scrollToTop} />
+      </section>
+
+      {/* About section */}
+      <section className="about-preview">
+        {/* Render the AboutPreview component */}
+        <AboutPreview scrollToTop={scrollToTop} />
       </section>
 
       {/* Essay section */}
