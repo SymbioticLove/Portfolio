@@ -35,11 +35,7 @@ const Contact = () => {
           {emailButtonLabel}
         </a>
 
-        {/* Call button */}
-        <a href={callButtonHref} className="call-button">
-          {callButtonLabel}
-        </a>
-      </div>
+       
 
       {/* Closing paragraph */}
       <p>{closing}</p>
