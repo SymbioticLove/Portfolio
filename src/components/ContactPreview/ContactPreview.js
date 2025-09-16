@@ -21,9 +21,9 @@ function ContactPreview({ scrollToTop }) {
         <p>{contactPreviewText}</p>
 
         {/* Link to the full 'Contact' page */}
-        <Link to="/Portfolio/contact">
+        < to="/Portfolio/contact">
           {/* Reach Out button */}
-          <button className="contact-btn" onClick={scrollToTop}>
+          <button className="contact-btn" ={scrollToTop}>
             Reach Out ⇒
           </button>
         </Link>
@@ -37,4 +37,4 @@ ContactPreview.propTypes = {
 };
 
 // Exporting the 'ContactPreview' component to be used in other parts of the application
-export default ContactPreview;
+;
