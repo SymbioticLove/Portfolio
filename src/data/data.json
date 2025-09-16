@@ -156,7 +156,7 @@
         "emailButtonLabel": "Email Me",
         "emailButtonHref": "mailto:matthew@symbiotic.love",
         "callButtonLabel": "Call Me",
-        "callButtonHref": "tel:+19124381768",
+        "callButtonHref":
         "closing": "Thank you for visiting my portfolio and taking the time to explore my work. I appreciate your interest and look forward to connecting with you soon!" 
     },
     "warning": {
